@@ -12,11 +12,7 @@ Mô tả dự án:
 
 PHÂN CÔNG NHIỆM VỤ
 ---------------------------------------
-Đánh giá dự án:
-Ưu điểm của dự án:
-
-Hạn chế của dự án:
-
-Đánh giá tổng quan về dự án:
+Đánh giá :
+Ưu điểm :
 
 Mục tiêu:

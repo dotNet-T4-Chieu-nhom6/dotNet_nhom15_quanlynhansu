@@ -1,18 +1,18 @@
 # dotNet_nhom6
 Thành viên nhóm:
-  1.Huỳnh Hữu Đức
-  2.Lê Hoàng Nhất Thống
-  3.Dương Thuận Quang
+  1.Huỳnh Hữu Đức  
+  2.Lê Hoàng Nhất Thống  
+  3.Dương Thuận Quang  
   
-DỰ ÁN
+DỰ ÁN  
+---------------------------------------  
+Tên dự án: Quản lý nhân sự  
+Mô tả dự án:   
+
+
+PHÂN CÔNG NHIỆM VỤ  
 ---------------------------------------
-Tên dự án: Quản lý nhân sự
-Mô tả dự án: 
+Đánh giá :  
+Ưu điểm :  
 
-
-PHÂN CÔNG NHIỆM VỤ
----------------------------------------
-Đánh giá :
-Ưu điểm :
-
-Mục tiêu:
+Mục tiêu:  

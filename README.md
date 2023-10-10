@@ -1,12 +1,12 @@
 # dotNet_nhom6
 Thành viên nhóm:
-  1.
-  2.
-  3.
+  1.Huỳnh Hữu Đức
+  2.Lê Hoàng Nhất Thống
+  3.Dương Thuận Quang
   
 DỰ ÁN
 ---------------------------------------
-Tên dự án:
+Tên dự án: Quản lý nhân sự
 Mô tả dự án: 
 
 

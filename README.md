@@ -1,4 +1,4 @@
-# dotNet_nhom6
+# dotNet_nhom15
 Thành viên nhóm:
   1.Huỳnh Hữu Đức  
   2.Lê Hoàng Nhất Thống  

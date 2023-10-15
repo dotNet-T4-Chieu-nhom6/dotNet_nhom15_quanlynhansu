@@ -1,0 +1,13 @@
+D:\HuynhHuuDuc_2001207422\QuanLyNhanSu\QuanLyNhanSu\bin\Debug\QuanLyNhanSu.exe.config
+D:\HuynhHuuDuc_2001207422\QuanLyNhanSu\QuanLyNhanSu\bin\Debug\QuanLyNhanSu.exe
+D:\HuynhHuuDuc_2001207422\QuanLyNhanSu\QuanLyNhanSu\bin\Debug\QuanLyNhanSu.pdb
+D:\HuynhHuuDuc_2001207422\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.csproj.AssemblyReference.cache
+D:\HuynhHuuDuc_2001207422\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.frmDangNhap.resources
+D:\HuynhHuuDuc_2001207422\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.Properties.Resources.resources
+D:\HuynhHuuDuc_2001207422\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.csproj.GenerateResource.cache
+D:\HuynhHuuDuc_2001207422\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.csproj.CoreCompileInputs.cache
+D:\HuynhHuuDuc_2001207422\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.exe
+D:\HuynhHuuDuc_2001207422\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.pdb
+D:\HuynhHuuDuc_2001207422\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.frmDangKy.resources
+D:\HuynhHuuDuc_2001207422\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.frmMain.resources
+D:\HuynhHuuDuc_2001207422\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.frmQuenMatKhau.resources

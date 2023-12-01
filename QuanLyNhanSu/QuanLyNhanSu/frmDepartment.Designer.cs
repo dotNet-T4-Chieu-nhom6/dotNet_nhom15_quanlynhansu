@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.button_Them = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.button_Sua = new System.Windows.Forms.Button();
+            this.button_Xoa = new System.Windows.Forms.Button();
+            this.button_Thoat = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
@@ -46,35 +46,35 @@
             this.button_Them.Text = "Thêm";
             this.button_Them.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // button_Sua
             // 
-            this.button2.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(42, 110);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(90, 30);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Sửa";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button_Sua.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_Sua.Location = new System.Drawing.Point(42, 110);
+            this.button_Sua.Name = "button_Sua";
+            this.button_Sua.Size = new System.Drawing.Size(90, 30);
+            this.button_Sua.TabIndex = 1;
+            this.button_Sua.Text = "Sửa";
+            this.button_Sua.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // button_Xoa
             // 
-            this.button3.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(42, 180);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(90, 30);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Xóa";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button_Xoa.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_Xoa.Location = new System.Drawing.Point(42, 180);
+            this.button_Xoa.Name = "button_Xoa";
+            this.button_Xoa.Size = new System.Drawing.Size(90, 30);
+            this.button_Xoa.TabIndex = 2;
+            this.button_Xoa.Text = "Xóa";
+            this.button_Xoa.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // button_Thoat
             // 
-            this.button4.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(42, 356);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(90, 30);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Thoát";
-            this.button4.UseVisualStyleBackColor = true;
+            this.button_Thoat.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_Thoat.Location = new System.Drawing.Point(42, 356);
+            this.button_Thoat.Name = "button_Thoat";
+            this.button_Thoat.Size = new System.Drawing.Size(90, 30);
+            this.button_Thoat.TabIndex = 3;
+            this.button_Thoat.Text = "Thoát";
+            this.button_Thoat.UseVisualStyleBackColor = true;
             // 
             // textBox1
             // 
@@ -100,9 +100,9 @@
             this.ClientSize = new System.Drawing.Size(689, 423);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button_Thoat);
+            this.Controls.Add(this.button_Xoa);
+            this.Controls.Add(this.button_Sua);
             this.Controls.Add(this.button_Them);
             this.Name = "frmDepartment";
             this.Text = "FrmDepartment";
@@ -114,9 +114,9 @@
         #endregion
 
         private System.Windows.Forms.Button button_Them;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button_Sua;
+        private System.Windows.Forms.Button button_Xoa;
+        private System.Windows.Forms.Button button_Thoat;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.ListBox listBox1;
     }

@@ -39,7 +39,6 @@ namespace QuanLyNhanSu
             LoadDepartment();
         }
 
-        private int selectedID = -1;
         private void dataGridView_Department_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             int numrow;
@@ -57,6 +56,11 @@ namespace QuanLyNhanSu
 
         private void button_Them_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrEmpty(txt_tenPB.Text))
+            {
+                MessageBox.Show("Tên phòng ban không được trống", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
             if (IsDuplicateName(txt_tenPB.Text))
             {
                 MessageBox.Show("Tên phòng ban đã tồn tại. Vui lòng nhập một tên khác.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -127,7 +131,12 @@ namespace QuanLyNhanSu
 
         private void button_Xoa_Click(object sender, EventArgs e)
         {
-            if(string.IsNullOrEmpty(txt_tenPB.Text))
+            //if (dataGridView_Department.SelectedRows.Count == 0)
+            //{
+            //    MessageBox.Show("Hãy chọn một dòng để xóa.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            //    return;
+            //}
+            if (string.IsNullOrEmpty(txt_tenPB.Text))
             {
                 MessageBox.Show("Hãy chọn một dòng để xóa.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;

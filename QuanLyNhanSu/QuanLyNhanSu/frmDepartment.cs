@@ -154,6 +154,7 @@ namespace QuanLyNhanSu
 
         private void button_Thoat_Click(object sender, EventArgs e)
         {
+            this.DialogResult = DialogResult.OK; //
             this.Close();
         }
     }

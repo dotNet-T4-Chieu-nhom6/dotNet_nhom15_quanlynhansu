@@ -17,5 +17,22 @@ namespace QuanLyNhanSu
             InitializeComponent();
         }
 
+        private void phòngBanToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmDepartment frmD = new frmDepartment();
+            DialogResult result = frmD.ShowDialog();
+
+            if (result == DialogResult.OK)
+            {
+                // Code xử lý sau khi frmDepartment được đóng
+                this.Show(); // Hiển thị lại frmMain 
+            }
+            else
+            {
+                // Code xử lý khi frm2 được đóng với Cancel hoặc một giá trị khác
+                this.Show(); // Hiển thị lại frmMain
+            }
+        }
     }
 }

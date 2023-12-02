@@ -117,13 +117,13 @@ namespace QuanLyNhanSu
             // nhânViênToolStripMenuItem
             // 
             this.nhânViênToolStripMenuItem.Name = "nhânViênToolStripMenuItem";
-            this.nhânViênToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.nhânViênToolStripMenuItem.Size = new System.Drawing.Size(178, 26);
             this.nhânViênToolStripMenuItem.Text = "Nhân Viên";
             // 
             // phòngBanToolStripMenuItem
             // 
             this.phòngBanToolStripMenuItem.Name = "phòngBanToolStripMenuItem";
-            this.phòngBanToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.phòngBanToolStripMenuItem.Size = new System.Drawing.Size(178, 26);
             this.phòngBanToolStripMenuItem.Text = "Phòng Ban";
             this.phòngBanToolStripMenuItem.Click += new System.EventHandler(this.phòngBanToolStripMenuItem_Click);
             // 
@@ -235,9 +235,9 @@ namespace QuanLyNhanSu
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Times New Roman", 12F);
             this.groupBox1.Location = new System.Drawing.Point(44, 87);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(1068, 123);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
@@ -246,7 +246,7 @@ namespace QuanLyNhanSu
             // btn_TimKiem
             // 
             this.btn_TimKiem.Location = new System.Drawing.Point(893, 28);
-            this.btn_TimKiem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_TimKiem.Margin = new System.Windows.Forms.Padding(4);
             this.btn_TimKiem.Name = "btn_TimKiem";
             this.btn_TimKiem.Size = new System.Drawing.Size(136, 75);
             this.btn_TimKiem.TabIndex = 8;
@@ -256,7 +256,7 @@ namespace QuanLyNhanSu
             // txt_MaNhanVien
             // 
             this.txt_MaNhanVien.Location = new System.Drawing.Point(600, 71);
-            this.txt_MaNhanVien.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_MaNhanVien.Margin = new System.Windows.Forms.Padding(4);
             this.txt_MaNhanVien.Name = "txt_MaNhanVien";
             this.txt_MaNhanVien.Size = new System.Drawing.Size(243, 30);
             this.txt_MaNhanVien.TabIndex = 7;
@@ -268,7 +268,7 @@ namespace QuanLyNhanSu
             "Nam",
             "Nữ"});
             this.cb_GioiTinh.Location = new System.Drawing.Point(600, 28);
-            this.cb_GioiTinh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cb_GioiTinh.Margin = new System.Windows.Forms.Padding(4);
             this.cb_GioiTinh.Name = "cb_GioiTinh";
             this.cb_GioiTinh.Size = new System.Drawing.Size(243, 30);
             this.cb_GioiTinh.TabIndex = 6;
@@ -276,7 +276,7 @@ namespace QuanLyNhanSu
             // txt_HoTen
             // 
             this.txt_HoTen.Location = new System.Drawing.Point(132, 28);
-            this.txt_HoTen.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_HoTen.Margin = new System.Windows.Forms.Padding(4);
             this.txt_HoTen.Name = "txt_HoTen";
             this.txt_HoTen.Size = new System.Drawing.Size(289, 30);
             this.txt_HoTen.TabIndex = 5;
@@ -284,7 +284,7 @@ namespace QuanLyNhanSu
             // txt_NgaySinh
             // 
             this.txt_NgaySinh.Location = new System.Drawing.Point(132, 68);
-            this.txt_NgaySinh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_NgaySinh.Margin = new System.Windows.Forms.Padding(4);
             this.txt_NgaySinh.Name = "txt_NgaySinh";
             this.txt_NgaySinh.Size = new System.Drawing.Size(289, 30);
             this.txt_NgaySinh.TabIndex = 4;
@@ -350,7 +350,7 @@ namespace QuanLyNhanSu
             this.ngaySinh,
             this.gioiTinh});
             this.dgv_NhanVien.Location = new System.Drawing.Point(44, 258);
-            this.dgv_NhanVien.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgv_NhanVien.Margin = new System.Windows.Forms.Padding(4);
             this.dgv_NhanVien.Name = "dgv_NhanVien";
             this.dgv_NhanVien.RowHeadersWidth = 51;
             this.dgv_NhanVien.Size = new System.Drawing.Size(1068, 278);
@@ -395,7 +395,7 @@ namespace QuanLyNhanSu
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmMain";
             this.Text = "frmMain";
             this.menuStrip1.ResumeLayout(false);

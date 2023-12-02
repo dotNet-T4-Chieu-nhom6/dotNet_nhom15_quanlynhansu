@@ -28,13 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox_tenTK = new System.Windows.Forms.TextBox();
             this.textBox_matkhau = new System.Windows.Forms.TextBox();
-            this.comboBox_LoaiTK = new System.Windows.Forms.ComboBox();
             this.button_Them = new System.Windows.Forms.Button();
             this.button_Sua = new System.Windows.Forms.Button();
             this.button_Xoa = new System.Windows.Forms.Button();
@@ -44,12 +42,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.textBox_Email = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.quanLyNhanSuDataSet = new QuanLyNhanSu.QuanLyNhanSuDataSet();
-            this.usersBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.usersTableAdapter = new QuanLyNhanSu.QuanLyNhanSuDataSetTableAdapters.UsersTableAdapter();
+            this.comboBox_Quyen = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.quanLyNhanSuDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -78,9 +72,9 @@
             this.label3.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(24, 249);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(105, 19);
+            this.label3.Size = new System.Drawing.Size(53, 19);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Loại tài khoản";
+            this.label3.Text = "Quyền";
             // 
             // textBox_tenTK
             // 
@@ -96,14 +90,6 @@
             this.textBox_matkhau.Size = new System.Drawing.Size(212, 22);
             this.textBox_matkhau.TabIndex = 4;
             // 
-            // comboBox_LoaiTK
-            // 
-            this.comboBox_LoaiTK.FormattingEnabled = true;
-            this.comboBox_LoaiTK.Location = new System.Drawing.Point(143, 244);
-            this.comboBox_LoaiTK.Name = "comboBox_LoaiTK";
-            this.comboBox_LoaiTK.Size = new System.Drawing.Size(212, 24);
-            this.comboBox_LoaiTK.TabIndex = 5;
-            // 
             // button_Them
             // 
             this.button_Them.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -113,6 +99,7 @@
             this.button_Them.TabIndex = 6;
             this.button_Them.Text = "Thêm";
             this.button_Them.UseVisualStyleBackColor = true;
+            this.button_Them.Click += new System.EventHandler(this.button_Them_Click);
             // 
             // button_Sua
             // 
@@ -123,6 +110,7 @@
             this.button_Sua.TabIndex = 7;
             this.button_Sua.Text = "Sửa";
             this.button_Sua.UseVisualStyleBackColor = true;
+            this.button_Sua.Click += new System.EventHandler(this.button_Sua_Click);
             // 
             // button_Xoa
             // 
@@ -133,6 +121,7 @@
             this.button_Xoa.TabIndex = 8;
             this.button_Xoa.Text = "Xóa";
             this.button_Xoa.UseVisualStyleBackColor = true;
+            this.button_Xoa.Click += new System.EventHandler(this.button_Xoa_Click);
             // 
             // button_Thoat
             // 
@@ -160,6 +149,7 @@
             // 
             this.textBox_idTK.Location = new System.Drawing.Point(143, 28);
             this.textBox_idTK.Name = "textBox_idTK";
+            this.textBox_idTK.ReadOnly = true;
             this.textBox_idTK.Size = new System.Drawing.Size(212, 22);
             this.textBox_idTK.TabIndex = 13;
             // 
@@ -190,25 +180,25 @@
             this.label4.TabIndex = 14;
             this.label4.Text = "Email";
             // 
-            // quanLyNhanSuDataSet
+            // comboBox_Quyen
             // 
-            this.quanLyNhanSuDataSet.DataSetName = "QuanLyNhanSuDataSet";
-            this.quanLyNhanSuDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // usersBindingSource
-            // 
-            this.usersBindingSource.DataMember = "Users";
-            this.usersBindingSource.DataSource = this.quanLyNhanSuDataSet;
-            // 
-            // usersTableAdapter
-            // 
-            this.usersTableAdapter.ClearBeforeFill = true;
+            this.comboBox_Quyen.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox_Quyen.FormattingEnabled = true;
+            this.comboBox_Quyen.Items.AddRange(new object[] {
+            "admin",
+            "user",
+            "manager"});
+            this.comboBox_Quyen.Location = new System.Drawing.Point(143, 249);
+            this.comboBox_Quyen.Name = "comboBox_Quyen";
+            this.comboBox_Quyen.Size = new System.Drawing.Size(210, 24);
+            this.comboBox_Quyen.TabIndex = 16;
             // 
             // frmUsers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(958, 478);
+            this.Controls.Add(this.comboBox_Quyen);
             this.Controls.Add(this.textBox_Email);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.textBox_idTK);
@@ -218,7 +208,6 @@
             this.Controls.Add(this.button_Xoa);
             this.Controls.Add(this.button_Sua);
             this.Controls.Add(this.button_Them);
-            this.Controls.Add(this.comboBox_LoaiTK);
             this.Controls.Add(this.textBox_matkhau);
             this.Controls.Add(this.textBox_tenTK);
             this.Controls.Add(this.label3);
@@ -228,8 +217,6 @@
             this.Text = "FrmUsers";
             this.Load += new System.EventHandler(this.frmUser_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.quanLyNhanSuDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -242,7 +229,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox_tenTK;
         private System.Windows.Forms.TextBox textBox_matkhau;
-        private System.Windows.Forms.ComboBox comboBox_LoaiTK;
         private System.Windows.Forms.Button button_Them;
         private System.Windows.Forms.Button button_Sua;
         private System.Windows.Forms.Button button_Xoa;
@@ -252,8 +238,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBox_Email;
         private System.Windows.Forms.Label label4;
-        private QuanLyNhanSuDataSet quanLyNhanSuDataSet;
-        private System.Windows.Forms.BindingSource usersBindingSource;
-        private QuanLyNhanSuDataSetTableAdapters.UsersTableAdapter usersTableAdapter;
+        private System.Windows.Forms.ComboBox comboBox_Quyen;
     }
 }

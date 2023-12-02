@@ -56,8 +56,8 @@ Insert into PhongBan(tenphongban) Values
 Go
 Insert into Users(nameU, passU, emailU, phanquyen ) Values 
 ('admin','admin123','admin@gmail.com',N'admin'),
-('kh01','kh123','kh01@gmail.com',N'khachhang'),
-('kh02','kh123','kh02@gmail.com',N'khachhang')
+('kh01','kh123','kh01@gmail.com',N'user'),
+('kh02','kh123','kh02@gmail.com',N'user')
 Go
 Insert into NhanVien(tennv,ngaysinh,gioitinh,diachi,didong,email,vanhoa,chuyenmon,luong) Values
 (N'Võ Thu Thủy','2001-01-15',N'Nữ',N'123 Đường Lê Văn Khương Quận 12','0777777777','thuthuy@gmail.com',N'nghe nhạc',N'tính toán',6000000),

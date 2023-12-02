@@ -47,6 +47,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Connection.cs" />
+    <Compile Include="Const.cs" />
     <Compile Include="Employee.cs" />
     <Compile Include="frmDangKy.cs">
       <SubType>Form</SubType>

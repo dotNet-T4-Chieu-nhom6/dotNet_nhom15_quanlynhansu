@@ -97,6 +97,7 @@ namespace QuanLyNhanSu
             this.quảnLýTàiKhoảnToolStripMenuItem.Name = "quảnLýTàiKhoảnToolStripMenuItem";
             this.quảnLýTàiKhoảnToolStripMenuItem.Size = new System.Drawing.Size(232, 26);
             this.quảnLýTàiKhoảnToolStripMenuItem.Text = "Quản lý tài khoản";
+            this.quảnLýTàiKhoảnToolStripMenuItem.Click += new System.EventHandler(this.quảnLýTàiKhoảnToolStripMenuItem_Click);
             // 
             // đăngXuấtToolStripMenuItem
             // 
@@ -117,13 +118,13 @@ namespace QuanLyNhanSu
             // nhânViênToolStripMenuItem
             // 
             this.nhânViênToolStripMenuItem.Name = "nhânViênToolStripMenuItem";
-            this.nhânViênToolStripMenuItem.Size = new System.Drawing.Size(178, 26);
+            this.nhânViênToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.nhânViênToolStripMenuItem.Text = "Nhân Viên";
             // 
             // phòngBanToolStripMenuItem
             // 
             this.phòngBanToolStripMenuItem.Name = "phòngBanToolStripMenuItem";
-            this.phòngBanToolStripMenuItem.Size = new System.Drawing.Size(178, 26);
+            this.phòngBanToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.phòngBanToolStripMenuItem.Text = "Phòng Ban";
             this.phòngBanToolStripMenuItem.Click += new System.EventHandler(this.phòngBanToolStripMenuItem_Click);
             // 

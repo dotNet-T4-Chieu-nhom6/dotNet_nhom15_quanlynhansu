@@ -34,5 +34,17 @@ namespace QuanLyNhanSu
                 this.Show(); // Hiển thị lại frmMain
             }
         }
+
+        private void quảnLýTàiKhoảnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmUsers frmU = new frmUsers();
+            DialogResult result = frmU.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                this.Show();
+            }
+            else { this.Show(); }
+        }
     }
 }

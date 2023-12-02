@@ -48,7 +48,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Connection.cs" />
-    <Compile Include="Const.cs" />
     <Compile Include="Employee.cs" />
     <Compile Include="frmDangKy.cs">
       <SubType>Form</SubType>
@@ -86,11 +85,11 @@
     <Compile Include="frmQuenMatKhau.Designer.cs">
       <DependentUpon>frmQuenMatKhau.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmUser.cs">
+    <Compile Include="frmUsers.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmUser.Designer.cs">
-      <DependentUpon>frmUser.cs</DependentUpon>
+    <Compile Include="frmUsers.Designer.cs">
+      <DependentUpon>frmUsers.cs</DependentUpon>
     </Compile>
     <Compile Include="ListEmployee.cs" />
     <Compile Include="Program.cs" />
@@ -113,8 +112,8 @@
     <EmbeddedResource Include="frmQuenMatKhau.resx">
       <DependentUpon>frmQuenMatKhau.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmUser.resx">
-      <DependentUpon>frmUser.cs</DependentUpon>
+    <EmbeddedResource Include="frmUsers.resx">
+      <DependentUpon>frmUsers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

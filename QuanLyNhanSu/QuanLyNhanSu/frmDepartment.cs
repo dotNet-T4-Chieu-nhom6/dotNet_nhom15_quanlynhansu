@@ -13,7 +13,7 @@ namespace QuanLyNhanSu
 {
     public partial class frmDepartment : Form
     {
-        int index = -1;
+        //int index = -1;
         public frmDepartment()
         {
             InitializeComponent();

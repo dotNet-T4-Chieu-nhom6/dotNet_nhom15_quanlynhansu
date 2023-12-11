@@ -57,7 +57,7 @@ namespace QuanLyNhanSu
                 textBox_Email.Text = dataGridView1.Rows[numrows].Cells[3].Value.ToString();
                 comboBox_Quyen.Text = dataGridView1.Rows[numrows].Cells[4].Value.ToString();
             }
-            catch (Exception ex)
+            catch (Exception )
             {
 
             }

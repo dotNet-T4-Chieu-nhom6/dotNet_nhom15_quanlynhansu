@@ -39,13 +39,6 @@ namespace QuanLyNhanSu
             this.thốngKêToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.trợGiúpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.btn_Them = new System.Windows.Forms.ToolStripButton();
-            this.btn_Sua = new System.Windows.Forms.ToolStripButton();
-            this.btn_Xoa = new System.Windows.Forms.ToolStripButton();
-            this.btn_Save = new System.Windows.Forms.ToolStripButton();
-            this.btn_Huy = new System.Windows.Forms.ToolStripButton();
-            this.btn_Update = new System.Windows.Forms.ToolStripButton();
-            this.btn_In = new System.Windows.Forms.ToolStripButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btn_TimKiem = new System.Windows.Forms.Button();
             this.txt_MaNhanVien = new System.Windows.Forms.TextBox();
@@ -62,6 +55,14 @@ namespace QuanLyNhanSu
             this.hoTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ngaySinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gioiTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btn_Show = new System.Windows.Forms.ToolStripButton();
+            this.btn_Them = new System.Windows.Forms.ToolStripButton();
+            this.btn_Sua = new System.Windows.Forms.ToolStripButton();
+            this.btn_Xoa = new System.Windows.Forms.ToolStripButton();
+            this.btn_Save = new System.Windows.Forms.ToolStripButton();
+            this.btn_Huy = new System.Windows.Forms.ToolStripButton();
+            this.btn_Update = new System.Windows.Forms.ToolStripButton();
+            this.btn_In = new System.Windows.Forms.ToolStripButton();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -89,20 +90,20 @@ namespace QuanLyNhanSu
             this.đăngXuấtToolStripMenuItem});
             this.hệThốngToolStripMenuItem.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hệThốngToolStripMenuItem.Name = "hệThốngToolStripMenuItem";
-            this.hệThốngToolStripMenuItem.Size = new System.Drawing.Size(94, 26);
+            this.hệThốngToolStripMenuItem.Size = new System.Drawing.Size(92, 26);
             this.hệThốngToolStripMenuItem.Text = "Hệ thống";
             // 
             // quảnLýTàiKhoảnToolStripMenuItem
             // 
             this.quảnLýTàiKhoảnToolStripMenuItem.Name = "quảnLýTàiKhoảnToolStripMenuItem";
-            this.quảnLýTàiKhoảnToolStripMenuItem.Size = new System.Drawing.Size(232, 26);
+            this.quảnLýTàiKhoảnToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.quảnLýTàiKhoảnToolStripMenuItem.Text = "Quản lý tài khoản";
             this.quảnLýTàiKhoảnToolStripMenuItem.Click += new System.EventHandler(this.quảnLýTàiKhoảnToolStripMenuItem_Click);
             // 
             // đăngXuấtToolStripMenuItem
             // 
             this.đăngXuấtToolStripMenuItem.Name = "đăngXuấtToolStripMenuItem";
-            this.đăngXuấtToolStripMenuItem.Size = new System.Drawing.Size(232, 26);
+            this.đăngXuấtToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.đăngXuấtToolStripMenuItem.Text = "Đăng Xuất";
             // 
             // quảnLýToolStripMenuItem
@@ -112,19 +113,19 @@ namespace QuanLyNhanSu
             this.phòngBanToolStripMenuItem});
             this.quảnLýToolStripMenuItem.Font = new System.Drawing.Font("Times New Roman", 12F);
             this.quảnLýToolStripMenuItem.Name = "quảnLýToolStripMenuItem";
-            this.quảnLýToolStripMenuItem.Size = new System.Drawing.Size(86, 26);
+            this.quảnLýToolStripMenuItem.Size = new System.Drawing.Size(84, 26);
             this.quảnLýToolStripMenuItem.Text = "Quản lý";
             // 
             // nhânViênToolStripMenuItem
             // 
             this.nhânViênToolStripMenuItem.Name = "nhânViênToolStripMenuItem";
-            this.nhânViênToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.nhânViênToolStripMenuItem.Size = new System.Drawing.Size(170, 26);
             this.nhânViênToolStripMenuItem.Text = "Nhân Viên";
             // 
             // phòngBanToolStripMenuItem
             // 
             this.phòngBanToolStripMenuItem.Name = "phòngBanToolStripMenuItem";
-            this.phòngBanToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.phòngBanToolStripMenuItem.Size = new System.Drawing.Size(170, 26);
             this.phòngBanToolStripMenuItem.Text = "Phòng Ban";
             this.phòngBanToolStripMenuItem.Click += new System.EventHandler(this.phòngBanToolStripMenuItem_Click);
             // 
@@ -132,20 +133,21 @@ namespace QuanLyNhanSu
             // 
             this.thốngKêToolStripMenuItem.Font = new System.Drawing.Font("Times New Roman", 12F);
             this.thốngKêToolStripMenuItem.Name = "thốngKêToolStripMenuItem";
-            this.thốngKêToolStripMenuItem.Size = new System.Drawing.Size(101, 26);
+            this.thốngKêToolStripMenuItem.Size = new System.Drawing.Size(99, 26);
             this.thốngKêToolStripMenuItem.Text = "Thống Kê";
             // 
             // trợGiúpToolStripMenuItem
             // 
             this.trợGiúpToolStripMenuItem.Font = new System.Drawing.Font("Times New Roman", 12F);
             this.trợGiúpToolStripMenuItem.Name = "trợGiúpToolStripMenuItem";
-            this.trợGiúpToolStripMenuItem.Size = new System.Drawing.Size(93, 26);
+            this.trợGiúpToolStripMenuItem.Size = new System.Drawing.Size(91, 26);
             this.trợGiúpToolStripMenuItem.Text = "Trợ giúp";
             // 
             // toolStrip1
             // 
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btn_Show,
             this.btn_Them,
             this.btn_Sua,
             this.btn_Xoa,
@@ -158,70 +160,6 @@ namespace QuanLyNhanSu
             this.toolStrip1.Size = new System.Drawing.Size(1167, 29);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
-            // 
-            // btn_Them
-            // 
-            this.btn_Them.Font = new System.Drawing.Font("Times New Roman", 12F);
-            this.btn_Them.Image = global::QuanLyNhanSu.Properties.Resources.iconThem;
-            this.btn_Them.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btn_Them.Name = "btn_Them";
-            this.btn_Them.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btn_Them.Size = new System.Drawing.Size(78, 26);
-            this.btn_Them.Text = "Thêm";
-            // 
-            // btn_Sua
-            // 
-            this.btn_Sua.Font = new System.Drawing.Font("Times New Roman", 12F);
-            this.btn_Sua.Image = global::QuanLyNhanSu.Properties.Resources.iconSua;
-            this.btn_Sua.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btn_Sua.Name = "btn_Sua";
-            this.btn_Sua.Size = new System.Drawing.Size(65, 26);
-            this.btn_Sua.Text = "Sửa";
-            // 
-            // btn_Xoa
-            // 
-            this.btn_Xoa.Font = new System.Drawing.Font("Times New Roman", 12F);
-            this.btn_Xoa.Image = global::QuanLyNhanSu.Properties.Resources.iconXoa;
-            this.btn_Xoa.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btn_Xoa.Name = "btn_Xoa";
-            this.btn_Xoa.Size = new System.Drawing.Size(67, 26);
-            this.btn_Xoa.Text = "Xóa";
-            // 
-            // btn_Save
-            // 
-            this.btn_Save.Font = new System.Drawing.Font("Times New Roman", 12F);
-            this.btn_Save.Image = global::QuanLyNhanSu.Properties.Resources.iconSave;
-            this.btn_Save.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btn_Save.Name = "btn_Save";
-            this.btn_Save.Size = new System.Drawing.Size(65, 26);
-            this.btn_Save.Text = "Lưu";
-            // 
-            // btn_Huy
-            // 
-            this.btn_Huy.Font = new System.Drawing.Font("Times New Roman", 12F);
-            this.btn_Huy.Image = global::QuanLyNhanSu.Properties.Resources.iconHuy;
-            this.btn_Huy.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btn_Huy.Name = "btn_Huy";
-            this.btn_Huy.Size = new System.Drawing.Size(66, 26);
-            this.btn_Huy.Text = "Hủy";
-            // 
-            // btn_Update
-            // 
-            this.btn_Update.Font = new System.Drawing.Font("Times New Roman", 12F);
-            this.btn_Update.Image = global::QuanLyNhanSu.Properties.Resources.iconUpdate;
-            this.btn_Update.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btn_Update.Name = "btn_Update";
-            this.btn_Update.Size = new System.Drawing.Size(103, 26);
-            this.btn_Update.Text = "Cập nhật";
-            // 
-            // btn_In
-            // 
-            this.btn_In.Font = new System.Drawing.Font("Times New Roman", 12F);
-            this.btn_In.Image = global::QuanLyNhanSu.Properties.Resources.iconIn;
-            this.btn_In.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btn_In.Name = "btn_In";
-            this.btn_In.Size = new System.Drawing.Size(49, 26);
-            this.btn_In.Text = "In";
             // 
             // groupBox1
             // 
@@ -385,6 +323,79 @@ namespace QuanLyNhanSu
             this.gioiTinh.Name = "gioiTinh";
             this.gioiTinh.Width = 125;
             // 
+            // btn_Show
+            // 
+            this.btn_Show.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Show.Image = global::QuanLyNhanSu.Properties.Resources.iconShow;
+            this.btn_Show.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn_Show.Name = "btn_Show";
+            this.btn_Show.Size = new System.Drawing.Size(69, 26);
+            this.btn_Show.Text = "Xem";
+            // 
+            // btn_Them
+            // 
+            this.btn_Them.Font = new System.Drawing.Font("Times New Roman", 12F);
+            this.btn_Them.Image = global::QuanLyNhanSu.Properties.Resources.iconThem;
+            this.btn_Them.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn_Them.Name = "btn_Them";
+            this.btn_Them.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btn_Them.Size = new System.Drawing.Size(78, 26);
+            this.btn_Them.Text = "Thêm";
+            // 
+            // btn_Sua
+            // 
+            this.btn_Sua.Font = new System.Drawing.Font("Times New Roman", 12F);
+            this.btn_Sua.Image = global::QuanLyNhanSu.Properties.Resources.iconSua;
+            this.btn_Sua.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn_Sua.Name = "btn_Sua";
+            this.btn_Sua.Size = new System.Drawing.Size(65, 26);
+            this.btn_Sua.Text = "Sửa";
+            // 
+            // btn_Xoa
+            // 
+            this.btn_Xoa.Font = new System.Drawing.Font("Times New Roman", 12F);
+            this.btn_Xoa.Image = global::QuanLyNhanSu.Properties.Resources.iconXoa;
+            this.btn_Xoa.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn_Xoa.Name = "btn_Xoa";
+            this.btn_Xoa.Size = new System.Drawing.Size(67, 26);
+            this.btn_Xoa.Text = "Xóa";
+            // 
+            // btn_Save
+            // 
+            this.btn_Save.Font = new System.Drawing.Font("Times New Roman", 12F);
+            this.btn_Save.Image = global::QuanLyNhanSu.Properties.Resources.iconSave;
+            this.btn_Save.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn_Save.Name = "btn_Save";
+            this.btn_Save.Size = new System.Drawing.Size(65, 26);
+            this.btn_Save.Text = "Lưu";
+            // 
+            // btn_Huy
+            // 
+            this.btn_Huy.Font = new System.Drawing.Font("Times New Roman", 12F);
+            this.btn_Huy.Image = global::QuanLyNhanSu.Properties.Resources.iconHuy;
+            this.btn_Huy.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn_Huy.Name = "btn_Huy";
+            this.btn_Huy.Size = new System.Drawing.Size(66, 26);
+            this.btn_Huy.Text = "Hủy";
+            // 
+            // btn_Update
+            // 
+            this.btn_Update.Font = new System.Drawing.Font("Times New Roman", 12F);
+            this.btn_Update.Image = global::QuanLyNhanSu.Properties.Resources.iconUpdate;
+            this.btn_Update.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn_Update.Name = "btn_Update";
+            this.btn_Update.Size = new System.Drawing.Size(103, 26);
+            this.btn_Update.Text = "Cập nhật";
+            // 
+            // btn_In
+            // 
+            this.btn_In.Font = new System.Drawing.Font("Times New Roman", 12F);
+            this.btn_In.Image = global::QuanLyNhanSu.Properties.Resources.iconIn;
+            this.btn_In.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn_In.Name = "btn_In";
+            this.btn_In.Size = new System.Drawing.Size(49, 26);
+            this.btn_In.Text = "In";
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -446,5 +457,6 @@ namespace QuanLyNhanSu
         private System.Windows.Forms.DataGridViewTextBoxColumn hoTen;
         private System.Windows.Forms.DataGridViewTextBoxColumn ngaySinh;
         private System.Windows.Forms.DataGridViewTextBoxColumn gioiTinh;
+        private System.Windows.Forms.ToolStripButton btn_Show;
     }
 }

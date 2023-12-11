@@ -30,3 +30,6 @@ C:\Users\HP\Desktop\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\QuanLyNhanSu\obj\Deb
 C:\Users\HP\Desktop\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.exe
 C:\Users\HP\Desktop\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.pdb
 C:\Users\HP\Desktop\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.frmUsers.resources
+H:\DOANNET\QuanLyNhanSu\QuanLyNhanSu\bin\Debug\QuanLyNhanSu.exe.config
+H:\DOANNET\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.exe
+H:\DOANNET\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.pdb

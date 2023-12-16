@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QuanLyNhanSu
+namespace DTO
 {
     public class Employee
     {
@@ -68,8 +68,8 @@ namespace QuanLyNhanSu
 
         public string Expertise
         {
-          get { return expertise; }
-          set { expertise = value; }
+            get { return expertise; }
+            set { expertise = value; }
         }
 
         public int PhoneNumber
@@ -98,8 +98,8 @@ namespace QuanLyNhanSu
 
         public DateTime Birthdate
         {
-          get { return birthdate; }
-          set { birthdate = value; }
+            get { return birthdate; }
+            set { birthdate = value; }
         }
 
         public string Name

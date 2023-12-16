@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QuanLyNhanSu
+namespace DTO
 {
     public class ListEmployee
     {
@@ -12,11 +12,11 @@ namespace QuanLyNhanSu
 
         public static List<Employee> Instance
         {
-            get 
+            get
             {
                 if (instance == null)
                     instance = new List<Employee>();
-                return ListEmployee.instance; 
+                return ListEmployee.instance;
             }
             set { ListEmployee.instance = value; }
         }

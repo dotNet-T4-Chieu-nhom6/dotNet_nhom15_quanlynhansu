@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DTO;
+using BLL;
 
 namespace QuanLyNhanSu
 {
@@ -15,7 +17,7 @@ namespace QuanLyNhanSu
     {
         public frmMain()
         {
-            InitializeComponent();
+            InitializeComponent();            
         }
 
         private void phòngBanToolStripMenuItem_Click(object sender, EventArgs e)
@@ -46,6 +48,11 @@ namespace QuanLyNhanSu
                 this.Show();
             }
             else { this.Show(); }
+        }
+
+        private void frmMain_Load(object sender, EventArgs e)
+        {
+            dgv_NhanVien.DataSource = Bus_Layer.GetAllEmps();
         }
     }
 }

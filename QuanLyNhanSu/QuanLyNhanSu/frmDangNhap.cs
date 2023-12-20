@@ -58,6 +58,7 @@ namespace QuanLyNhanSu
                 else
                 {
                     MessageBox.Show("Tên tài khoản hoặc mật khẩu không chính xác !");
+                    return;
                 }
             }
 

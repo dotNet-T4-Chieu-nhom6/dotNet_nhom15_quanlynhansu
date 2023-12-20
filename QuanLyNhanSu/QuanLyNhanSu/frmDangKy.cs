@@ -33,13 +33,28 @@ namespace QuanLyNhanSu
             string Email = txt_Email.Text;
             string Admin;
 
-            if(chbAdmin.Checked == true)
+            if (tenTk.Trim() == "")
             {
-                Admin = "admin";
+                MessageBox.Show("Vui lòng nhập tên tài khoản!");
+                return;
             }
-            else
+
+            if (MatKhau.Trim() == "")
             {
-                Admin = "user";
+                MessageBox.Show("Vui lòng nhập mật khẩu!");
+                return;
+            }
+
+            if (xacNhanMatKhau.Trim() == "")
+            {
+                MessageBox.Show("Vui lòng nhập xác nhận mật khẩu");
+                return;
+            }
+
+            if (Email.Trim() == "")
+            {
+                MessageBox.Show("Vui lòng nhập Email");
+                return;
             }
 
             if (xacNhanMatKhau != MatKhau)
@@ -51,11 +66,22 @@ namespace QuanLyNhanSu
             if (CheckEmail(Email) == true)
             {
                 MessageBox.Show("Email này không đúng định dạng, vui lòng nhập đúng định dạng");
+                return;
             }
 
             if (modify.Userss("Select * from Users where emailU = '" + Email + "'").Count != 0)
             {
                 MessageBox.Show("Email này đã được đăng kí , vui lòng nhập email khác");
+                return;
+            }
+
+            if (chbAdmin.Checked == true)
+            {
+                Admin = "admin";
+            }
+            else
+            {
+                Admin = "user";
             }
 
             try
@@ -72,6 +98,7 @@ namespace QuanLyNhanSu
             catch
             {
                 MessageBox.Show("Tên Tài Khoản này đã được đăng ký, vui lòng đăng kí tài khoản khác!");
+                return;
             }
         }
     }

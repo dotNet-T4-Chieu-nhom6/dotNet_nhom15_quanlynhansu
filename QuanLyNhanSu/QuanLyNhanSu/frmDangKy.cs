@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Text.RegularExpressions;
+using System.Net.Mail;
 
 namespace QuanLyNhanSu
 {
@@ -20,9 +21,17 @@ namespace QuanLyNhanSu
 
         Modify modify = new Modify();
 
-        public bool CheckEmail(string em)//check email
+        public bool IsEmail(string email)
         {
-            return Regex.IsMatch(em, @"^[a-zA-Z0-9]{3,20}@gmail.com.(.vn|)$");
+            try
+            {
+                MailAddress m = new MailAddress(email);
+                return true;
+            }
+            catch (FormatException)
+            {
+                return false;
+            }
         }
 
         private void btn_DangKy_Click(object sender, EventArgs e)
@@ -63,7 +72,7 @@ namespace QuanLyNhanSu
                 return;
             }
 
-            if (CheckEmail(Email) == true)
+            if (IsEmail(Email) == false)
             {
                 MessageBox.Show("Email này không đúng định dạng, vui lòng nhập đúng định dạng");
                 return;

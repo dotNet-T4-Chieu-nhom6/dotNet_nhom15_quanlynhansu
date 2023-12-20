@@ -48,7 +48,7 @@ namespace QuanLyNhanSu
                 txt_idphongban.Text = dataGridView_Department.Rows[numrow].Cells[0].Value.ToString();
                 txt_tenPB.Text = dataGridView_Department.Rows[numrow].Cells[1].Value.ToString();
             }
-            catch (Exception ex)
+            catch (Exception )
             {
                 txt_tenPB.Text = "";
             }
@@ -154,8 +154,30 @@ namespace QuanLyNhanSu
 
         private void button_Thoat_Click(object sender, EventArgs e)
         {
-            this.DialogResult = DialogResult.OK; //
-            this.Close();
+            DialogResult r = MessageBox.Show("Bạn có muốn thoát không", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (r == DialogResult.Yes)
+            {
+
+                this.Hide();
+                frmMain mn = new frmMain();
+                mn.ShowDialog();
+                mn = null;
+                this.Close();
+            }
+            else
+            {
+                // nothing
+            }
+        }
+
+        private void frmDepartment_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult rs = MessageBox.Show("Bạn có muốn thoát không", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (rs == DialogResult.Yes)
+            {
+                e.Cancel = false;
+                return;
+            }
         }
     }
 }

@@ -10,7 +10,6 @@ using System.Windows.Forms;
 using DTO;
 using BLL;
 using System.Data.SqlClient;
-using System.Data;
 
 namespace QuanLyNhanSu
 {

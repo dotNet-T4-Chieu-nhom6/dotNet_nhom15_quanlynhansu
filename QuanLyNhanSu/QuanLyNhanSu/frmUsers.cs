@@ -57,9 +57,13 @@ namespace QuanLyNhanSu
                 textBox_Email.Text = dataGridView1.Rows[numrows].Cells[3].Value.ToString();
                 comboBox_Quyen.Text = dataGridView1.Rows[numrows].Cells[4].Value.ToString();
             }
-            catch (Exception ex)
+            catch (Exception )
             {
-
+                textBox_idTK.Clear();
+                textBox_tenTK.Clear();
+                textBox_matkhau.Clear();
+                textBox_Email.Clear();
+                comboBox_Quyen.SelectedIndex = -1;
             }
         }
 
@@ -67,21 +71,25 @@ namespace QuanLyNhanSu
         {
             if (string.IsNullOrEmpty(textBox_tenTK.Text))
             {
+                textBox_tenTK.Focus();
                 MessageBox.Show("không được để trống tên tài khoản");
                 return false;
             }
             if (string.IsNullOrEmpty(textBox_matkhau.Text))
             {
+                textBox_matkhau.Focus();
                 MessageBox.Show("không được để trống mật khẩu");
                 return false;
             }
             if (string.IsNullOrEmpty(textBox_Email.Text))
             {
+                textBox_Email.Focus();
                 MessageBox.Show("không được để trống email");
                 return false;
             }
             if (!IsEmailValid(textBox_Email.Text))
             {
+                textBox_Email.Focus();
                 MessageBox.Show("Địa chỉ email không đúng định dạng");
                 return false;
             }
@@ -132,11 +140,13 @@ namespace QuanLyNhanSu
             if (IsDuplicateName(textBox_tenTK.Text))
             {
                 MessageBox.Show("Tên tài khoản đã tồn tại. Vui lòng nhập một tên khác.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                textBox_tenTK.Focus();
                 return;
             }
             if (IsDuplicateEmail(textBox_Email.Text))
             {
                 MessageBox.Show("Mail đã đăng ký. Vui lòng nhập một mail khác.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                textBox_Email.Focus();
                 return;
             }
             if (kiemtrarong())
@@ -163,11 +173,11 @@ namespace QuanLyNhanSu
                 MessageBox.Show("Hãy chọn một nội dung cần sửa.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            if (IsDuplicateName(textBox_tenTK.Text))
-            {
-                MessageBox.Show("Tên phòng ban đã tồn tại. Vui lòng nhập một tên khác.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
+            //if (IsDuplicateName(textBox_tenTK.Text))
+            //{
+            //    MessageBox.Show("Tên phòng ban đã tồn tại. Vui lòng nhập một tên khác.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            //    return;
+            //}
             using (SqlConnection con = Connection.GetSqlConnection())
             {
                 con.Open();
@@ -214,9 +224,40 @@ namespace QuanLyNhanSu
         }
         private void button_Thoat_Click(object sender, EventArgs e)
         {
-            DialogResult = DialogResult.OK;
-            this.Close();
+            DialogResult r = MessageBox.Show("Bạn có chắc muốn thoát?", "Thoát", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (r == DialogResult.Yes)
+            {
+                this.Hide();
+                frmMain mn = new frmMain();
+                mn.ShowDialog();
+                mn = null;
+                this.Close();
+            }
+            else
+            {
+                // nothing
+            }
         }
 
+        private void frmUsers_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult rs = MessageBox.Show("Bạn có muốn thoát không", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (rs == DialogResult.Yes)
+            {
+                // Yes thuộc tính e = false, cho phép đóng
+                e.Cancel = false;
+                return;
+            }
+        }
+
+        private void button_Themmoi_Click(object sender, EventArgs e)
+        {
+            textBox_idTK.Clear();
+            textBox_tenTK.Clear();
+            textBox_matkhau.Clear();
+            textBox_Email.Clear();
+            comboBox_Quyen.SelectedIndex = -1;
+            textBox_tenTK.Focus();
+        }
     }
 }

@@ -175,6 +175,7 @@ namespace QuanLyNhanSu
             this.btn_Them.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btn_Them.Size = new System.Drawing.Size(78, 26);
             this.btn_Them.Text = "Thêm";
+            this.btn_Them.Click += new System.EventHandler(this.btn_Them_Click);
             // 
             // btn_Sua
             // 
@@ -184,6 +185,7 @@ namespace QuanLyNhanSu
             this.btn_Sua.Name = "btn_Sua";
             this.btn_Sua.Size = new System.Drawing.Size(65, 26);
             this.btn_Sua.Text = "Sửa";
+            this.btn_Sua.Click += new System.EventHandler(this.btn_Sua_Click);
             // 
             // btn_Xoa
             // 
@@ -193,6 +195,7 @@ namespace QuanLyNhanSu
             this.btn_Xoa.Name = "btn_Xoa";
             this.btn_Xoa.Size = new System.Drawing.Size(67, 26);
             this.btn_Xoa.Text = "Xóa";
+            this.btn_Xoa.Click += new System.EventHandler(this.btn_Xoa_Click);
             // 
             // btn_Save
             // 

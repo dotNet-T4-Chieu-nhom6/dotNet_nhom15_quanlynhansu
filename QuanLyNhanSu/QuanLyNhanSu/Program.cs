@@ -16,7 +16,7 @@ namespace QuanLyNhanSu
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmEditEmployee());
+            Application.Run(new frmMain());
             //Application.Run(new frmDepartment());
         }
     }

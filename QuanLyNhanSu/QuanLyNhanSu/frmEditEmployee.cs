@@ -34,9 +34,17 @@ namespace QuanLyNhanSu
             string VanHoa = txt_Education.Text;
             string ChuyenMon = txt_Expertise.Text;
             int IDPB = int.Parse(txt_Department.Text);
-            int Luong = int.Parse(txt_Salary.Text);
-
-            Bus_Layer.UpdateEmps(IDNV, tenNV, NGSINH, gioiTinh, diaChi, email, DiDong, VanHoa, ChuyenMon, IDPB, Luong);
+            decimal Luong = decimal.Parse(txt_Salary.Text);
+            try
+            {
+                Bus_Layer.UpdateEmps(IDNV, tenNV, NGSINH, gioiTinh, diaChi, email, DiDong, VanHoa, ChuyenMon, IDPB, Luong);
+                MessageBox.Show("Lưu thông tin thành công!");
+                dtgv_Emp.DataSource = Bus_Layer.GetAllEmps();
+            }
+            catch
+            {
+                MessageBox.Show("Lưu thông tin thất bại!");
+            }
         }
 
         private void dtgv_Emp_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -77,6 +85,28 @@ namespace QuanLyNhanSu
         private void frmEditEmployee_Load(object sender, EventArgs e)
         {
             dtgv_Emp.DataSource = Bus_Layer.GetAllEmps();
+            txt_EmpID.Visible = false;
+            lb_EmpID.Visible = false;
+        }
+
+        private void btn_Exit_Click(object sender, EventArgs e)
+        {
+            DialogResult r = MessageBox.Show("Bạn có chắc muốn thoát?", "Thoát", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (r == DialogResult.Yes)
+            {
+                this.Hide();
+                frmMain f = new frmMain();
+                f.Show();
+            }
+        }
+
+        private void txt_Department_Leave(object sender, EventArgs e)
+        {
+            if(string.IsNullOrEmpty(txt_Department.Text))
+            {
+                MessageBox.Show("Mã phòng ban không được để trống!");
+                txt_Department.Focus();
+            }
         }
     }
 }

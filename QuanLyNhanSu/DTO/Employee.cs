@@ -78,9 +78,9 @@ namespace DTO
             get { return idphongban; }
             set { idphongban = value; }
         }
-        private int luong;
+        private decimal luong;
 
-        public int Luong
+        public decimal Luong
         {
             get { return luong; }
             set { luong = value; }

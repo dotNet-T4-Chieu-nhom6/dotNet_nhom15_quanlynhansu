@@ -20,3 +20,4 @@ H:\DOANNET\QuanLyNhanSu\QuanLyNhanSu\bin\Debug\DTO.pdb
 H:\DOANNET\QuanLyNhanSu\QuanLyNhanSu\bin\Debug\DAL.pdb
 H:\DOANNET\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.exe
 H:\DOANNET\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.pdb
+H:\DOANNET\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.frmDeleteEmp.resources

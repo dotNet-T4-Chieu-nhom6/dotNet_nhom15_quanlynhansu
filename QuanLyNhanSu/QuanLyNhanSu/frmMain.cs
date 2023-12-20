@@ -54,5 +54,26 @@ namespace QuanLyNhanSu
         {
             dgv_NhanVien.DataSource = Bus_Layer.GetAllEmps();
         }
+
+        private void btn_Sua_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmEditEmployee f = new frmEditEmployee();
+            f.Show();
+        }
+
+        private void btn_Them_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmAddEmployee f = new frmAddEmployee();
+            f.Show();
+        }
+
+        private void btn_Xoa_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmDeleteEmp f = new frmDeleteEmp();
+            f.Show();
+        }
     }
 }

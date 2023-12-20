@@ -28,59 +28,43 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label14 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.dtgv_Emp = new System.Windows.Forms.DataGridView();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.btn_Exit = new System.Windows.Forms.Button();
+            this.btn_Save = new System.Windows.Forms.Button();
+            this.txt_Department = new System.Windows.Forms.TextBox();
             this.txt_Expertise = new System.Windows.Forms.TextBox();
+            this.txt_Salary = new System.Windows.Forms.TextBox();
             this.txt_Email = new System.Windows.Forms.TextBox();
             this.txt_Education = new System.Windows.Forms.TextBox();
             this.txt_Address = new System.Windows.Forms.TextBox();
             this.txt_PhoneNumber = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txt_Gender = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.txt_Name = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.btn_Save = new System.Windows.Forms.Button();
-            this.btn_Exit = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txt_Benefit = new System.Windows.Forms.TextBox();
-            this.txt_Salary = new System.Windows.Forms.TextBox();
-            this.txt_Position = new System.Windows.Forms.TextBox();
-            this.txt_EmpID = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgv_Emp)).BeginInit();
             this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label14
+            // dtgv_Emp
             // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(7, 134);
-            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(59, 21);
-            this.label14.TabIndex = 3;
-            this.label14.Text = "Lương";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(492, 28);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(265, 28);
-            this.comboBox1.TabIndex = 19;
+            this.dtgv_Emp.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgv_Emp.Location = new System.Drawing.Point(40, 309);
+            this.dtgv_Emp.Name = "dtgv_Emp";
+            this.dtgv_Emp.RowTemplate.Height = 24;
+            this.dtgv_Emp.Size = new System.Drawing.Size(817, 293);
+            this.dtgv_Emp.TabIndex = 8;
+            this.dtgv_Emp.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgv_Emp_CellContentClick);
             // 
             // dateTimePicker1
             // 
@@ -89,12 +73,47 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(265, 28);
             this.dateTimePicker1.TabIndex = 18;
             // 
+            // btn_Exit
+            // 
+            this.btn_Exit.Location = new System.Drawing.Point(636, 241);
+            this.btn_Exit.Name = "btn_Exit";
+            this.btn_Exit.Size = new System.Drawing.Size(105, 33);
+            this.btn_Exit.TabIndex = 5;
+            this.btn_Exit.Text = "Thoát";
+            this.btn_Exit.UseVisualStyleBackColor = true;
+            this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);
+            // 
+            // btn_Save
+            // 
+            this.btn_Save.Location = new System.Drawing.Point(492, 241);
+            this.btn_Save.Name = "btn_Save";
+            this.btn_Save.Size = new System.Drawing.Size(105, 33);
+            this.btn_Save.TabIndex = 5;
+            this.btn_Save.Text = "Lưu";
+            this.btn_Save.UseVisualStyleBackColor = true;
+            this.btn_Save.Click += new System.EventHandler(this.btn_Save_Click);
+            // 
+            // txt_Department
+            // 
+            this.txt_Department.Location = new System.Drawing.Point(492, 196);
+            this.txt_Department.Name = "txt_Department";
+            this.txt_Department.Size = new System.Drawing.Size(265, 28);
+            this.txt_Department.TabIndex = 11;
+            this.txt_Department.Leave += new System.EventHandler(this.txt_Department_Leave);
+            // 
             // txt_Expertise
             // 
             this.txt_Expertise.Location = new System.Drawing.Point(492, 150);
             this.txt_Expertise.Name = "txt_Expertise";
             this.txt_Expertise.Size = new System.Drawing.Size(265, 28);
             this.txt_Expertise.TabIndex = 11;
+            // 
+            // txt_Salary
+            // 
+            this.txt_Salary.Location = new System.Drawing.Point(101, 196);
+            this.txt_Salary.Name = "txt_Salary";
+            this.txt_Salary.Size = new System.Drawing.Size(265, 28);
+            this.txt_Salary.TabIndex = 12;
             // 
             // txt_Email
             // 
@@ -124,6 +143,23 @@
             this.txt_PhoneNumber.Size = new System.Drawing.Size(265, 28);
             this.txt_PhoneNumber.TabIndex = 15;
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(384, 199);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(86, 21);
+            this.label10.TabIndex = 3;
+            this.label10.Text = "Mã phòng";
+            // 
+            // txt_Gender
+            // 
+            this.txt_Gender.Location = new System.Drawing.Point(492, 32);
+            this.txt_Gender.Name = "txt_Gender";
+            this.txt_Gender.Size = new System.Drawing.Size(265, 28);
+            this.txt_Gender.TabIndex = 16;
+            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -141,53 +177,15 @@
             this.txt_Name.Size = new System.Drawing.Size(265, 28);
             this.txt_Name.TabIndex = 17;
             // 
-            // label12
+            // label1
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(7, 93);
-            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(74, 21);
-            this.label12.TabIndex = 5;
-            this.label12.Text = "Chức vụ";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(384, 59);
-            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(90, 21);
-            this.label13.TabIndex = 6;
-            this.label13.Text = "Phòng ban";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(7, 54);
-            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(109, 21);
-            this.label11.TabIndex = 7;
-            this.label11.Text = "Mã nhân viên";
-            // 
-            // btn_Save
-            // 
-            this.btn_Save.Location = new System.Drawing.Point(574, 479);
-            this.btn_Save.Name = "btn_Save";
-            this.btn_Save.Size = new System.Drawing.Size(105, 33);
-            this.btn_Save.TabIndex = 8;
-            this.btn_Save.Text = "Lưu";
-            this.btn_Save.UseVisualStyleBackColor = true;
-            // 
-            // btn_Exit
-            // 
-            this.btn_Exit.Location = new System.Drawing.Point(703, 479);
-            this.btn_Exit.Name = "btn_Exit";
-            this.btn_Exit.Size = new System.Drawing.Size(105, 33);
-            this.btn_Exit.TabIndex = 9;
-            this.btn_Exit.Text = "Thoát";
-            this.btn_Exit.UseVisualStyleBackColor = true;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(7, 199);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(59, 21);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Lương";
             // 
             // label8
             // 
@@ -229,16 +227,6 @@
             this.label4.TabIndex = 7;
             this.label4.Text = "Địa chỉ";
             // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(384, 98);
-            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(84, 21);
-            this.label15.TabIndex = 4;
-            this.label15.Text = "Trạng thái";
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -248,14 +236,6 @@
             this.label6.Size = new System.Drawing.Size(76, 21);
             this.label6.TabIndex = 8;
             this.label6.Text = "Giới tính";
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(481, 95);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(243, 28);
-            this.comboBox3.TabIndex = 19;
             // 
             // label3
             // 
@@ -267,34 +247,6 @@
             this.label3.TabIndex = 9;
             this.label3.Text = "Ngày sinh";
             // 
-            // txt_Benefit
-            // 
-            this.txt_Benefit.Location = new System.Drawing.Point(481, 136);
-            this.txt_Benefit.Name = "txt_Benefit";
-            this.txt_Benefit.Size = new System.Drawing.Size(243, 28);
-            this.txt_Benefit.TabIndex = 8;
-            // 
-            // txt_Salary
-            // 
-            this.txt_Salary.Location = new System.Drawing.Point(122, 131);
-            this.txt_Salary.Name = "txt_Salary";
-            this.txt_Salary.Size = new System.Drawing.Size(243, 28);
-            this.txt_Salary.TabIndex = 9;
-            // 
-            // txt_Position
-            // 
-            this.txt_Position.Location = new System.Drawing.Point(122, 90);
-            this.txt_Position.Name = "txt_Position";
-            this.txt_Position.Size = new System.Drawing.Size(243, 28);
-            this.txt_Position.TabIndex = 11;
-            // 
-            // txt_EmpID
-            // 
-            this.txt_EmpID.Location = new System.Drawing.Point(122, 51);
-            this.txt_EmpID.Name = "txt_EmpID";
-            this.txt_EmpID.Size = new System.Drawing.Size(243, 28);
-            this.txt_EmpID.TabIndex = 13;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -305,25 +257,23 @@
             this.label2.TabIndex = 10;
             this.label2.Text = "Họ tên";
             // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(481, 56);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(243, 28);
-            this.comboBox2.TabIndex = 19;
-            // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.comboBox1);
             this.groupBox1.Controls.Add(this.dateTimePicker1);
+            this.groupBox1.Controls.Add(this.btn_Exit);
+            this.groupBox1.Controls.Add(this.btn_Save);
+            this.groupBox1.Controls.Add(this.txt_Department);
             this.groupBox1.Controls.Add(this.txt_Expertise);
+            this.groupBox1.Controls.Add(this.txt_Salary);
             this.groupBox1.Controls.Add(this.txt_Email);
             this.groupBox1.Controls.Add(this.txt_Education);
             this.groupBox1.Controls.Add(this.txt_Address);
             this.groupBox1.Controls.Add(this.txt_PhoneNumber);
+            this.groupBox1.Controls.Add(this.label10);
+            this.groupBox1.Controls.Add(this.txt_Gender);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.txt_Name);
+            this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label7);
@@ -331,98 +281,58 @@
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Location = new System.Drawing.Point(62, 56);
+            this.groupBox1.Location = new System.Drawing.Point(40, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(772, 211);
-            this.groupBox1.TabIndex = 6;
+            this.groupBox1.Size = new System.Drawing.Size(817, 280);
+            this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin cá nhân";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(384, 139);
-            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(71, 21);
-            this.label16.TabIndex = 2;
-            this.label16.Text = "Phụ cấp";
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.comboBox3);
-            this.groupBox2.Controls.Add(this.comboBox2);
-            this.groupBox2.Controls.Add(this.txt_Benefit);
-            this.groupBox2.Controls.Add(this.txt_Salary);
-            this.groupBox2.Controls.Add(this.txt_Position);
-            this.groupBox2.Controls.Add(this.txt_EmpID);
-            this.groupBox2.Controls.Add(this.label16);
-            this.groupBox2.Controls.Add(this.label14);
-            this.groupBox2.Controls.Add(this.label15);
-            this.groupBox2.Controls.Add(this.label12);
-            this.groupBox2.Controls.Add(this.label13);
-            this.groupBox2.Controls.Add(this.label11);
-            this.groupBox2.Location = new System.Drawing.Point(62, 294);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(772, 179);
-            this.groupBox2.TabIndex = 7;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Thông tin hợp đồng";
             // 
             // frmAddEmployee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(896, 568);
-            this.Controls.Add(this.btn_Save);
-            this.Controls.Add(this.btn_Exit);
+            this.ClientSize = new System.Drawing.Size(936, 614);
+            this.Controls.Add(this.dtgv_Emp);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.groupBox2);
             this.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmAddEmployee";
             this.Text = "frmAddEmployee";
+            this.Load += new System.EventHandler(this.frmAddEmployee_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dtgv_Emp)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.DataGridView dtgv_Emp;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Button btn_Exit;
+        private System.Windows.Forms.Button btn_Save;
+        private System.Windows.Forms.TextBox txt_Department;
         private System.Windows.Forms.TextBox txt_Expertise;
+        private System.Windows.Forms.TextBox txt_Salary;
         private System.Windows.Forms.TextBox txt_Email;
         private System.Windows.Forms.TextBox txt_Education;
         private System.Windows.Forms.TextBox txt_Address;
         private System.Windows.Forms.TextBox txt_PhoneNumber;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox txt_Gender;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txt_Name;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Button btn_Save;
-        private System.Windows.Forms.Button btn_Exit;
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txt_Benefit;
-        private System.Windows.Forms.TextBox txt_Salary;
-        private System.Windows.Forms.TextBox txt_Position;
-        private System.Windows.Forms.TextBox txt_EmpID;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.GroupBox groupBox2;
+
     }
 }

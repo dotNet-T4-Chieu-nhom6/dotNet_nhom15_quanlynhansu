@@ -3,6 +3,8 @@ Create Database QuanLyNhanSu
 Go
 Use QuanLyNhanSu
 
+--use master
+--drop database QuanLyNhanSu
 Go
 Create Table PhongBan
 (
@@ -32,7 +34,7 @@ didong varchar(100),
 vanhoa nvarchar(100),
 chuyenmon nvarchar(100),
 idphongban int ,
-luong money
+luong decimal(10,2)
 CONSTRAINT FK_NhanVien_PhongBan FOREIGN KEY (idphongban)REFERENCES PhongBan(idphongban)
 )
 Go
@@ -44,8 +46,8 @@ loaihd nvarchar(100),
 chucvu nvarchar(100),
 tenphongban nvarchar(100),
 trangthai nvarchar(100),
-phucap money,
-luongHD money,
+phucap decimal(10,2),
+luongHD decimal(10,2),
 CONSTRAINT FK_HopDong_NhanVien FOREIGN KEY (idnv) REFERENCES NhanVien(idnv)
 )
 Go
@@ -59,12 +61,64 @@ Insert into Users(nameU, passU, emailU, phanquyen ) Values
 ('kh01','kh123','kh01@gmail.com',N'user'),
 ('kh02','kh123','kh02@gmail.com',N'user')
 Go
-Insert into NhanVien(tennv,ngaysinh,gioitinh,diachi,didong,email,vanhoa,chuyenmon,luong) Values
-(N'Võ Thu Thủy','2001-01-15',N'Nữ',N'123 Đường Lê Văn Khương Quận 12','0777777777','thuthuy@gmail.com',N'nghe nhạc',N'tính toán',6000000),
-(N'Lê Thành Công','2002-02-17',N'Nam',N'456 Quận Gò Vấp','0666666666','thanhcong@gmail.com',N'đọc sách',N'tính toán',8000000)
+Insert into NhanVien
+Values
+(N'Võ Thu Thủy','2001-01-15',N'Nữ',N'123 Đường Lê Văn Khương Quận 12','0777777777','thuthuy@gmail.com',N'nghe nhạc',N'tính toán',1,6000000),
+(N'Lê Thành Công','2002-02-17',N'Nam',N'456 Quận Gò Vấp','0666666666','thanhcong@gmail.com',N'đọc sách',N'tính toán',2,8000000)
 Go 
 Insert into HopDong(idhd, loaihd,chucvu, trangthai,phucap,luongHD) Values
 ('987654', N'kinh doanh', N'Kế toán', N'đi làm đầy đủ', 200000,5000000),
 ('786786', N'kinh doanh', N'Kế toán', N'đã nghỉ', 200000,5000000)
 
+GO
+CREATE PROC ShowAllEmps
+AS
+select * from NhanVien
 
+
+GO
+CREATE PROC EditEmps
+@IDNV INT,
+@TENNV NVARCHAR(100),
+@NGSINH DATETIME,
+@GIOITINH NVARCHAR(10),
+@DIACHI NVARCHAR(100),
+@EMAIL VARCHAR(100),
+@DIDONG VARCHAR(20),
+@VANHOA NVARCHAR(100),
+@CHUYENMON NVARCHAR(100),
+@IDPB INT,
+@LUONG MONEY
+AS
+BEGIN
+	UPDATE NhanVien
+	SET tennv = @TENNV, ngaysinh = @NGSINH, gioitinh = @GIOITINH, diachi = @DIACHI, email = @EMAIL, didong = @DIDONG, vanhoa = @VANHOA, chuyenmon = @CHUYENMON, idphongban = @IDPB, luong = @LUONG
+	WHERE idnv = @IDNV
+END
+
+GO
+CREATE PROC AddEmp
+@TENNV NVARCHAR(100),
+@NGSINH DATETIME,
+@GIOITINH NVARCHAR(10),
+@DIACHI NVARCHAR(100),
+@EMAIL VARCHAR(100),
+@DIDONG VARCHAR(20),
+@VANHOA NVARCHAR(100),
+@CHUYENMON NVARCHAR(100),
+@IDPB INT,
+@LUONG MONEY
+AS
+BEGIN
+	INSERT INTO NhanVien
+	VALUES
+	(@TENNV, @NGSINH, @GIOITINH, @DIACHI, @EMAIL, @DIDONG, @VANHOA, @CHUYENMON, @IDPB, @LUONG);
+END
+
+GO
+CREATE PROC DeleteEmp
+@IDNV INT
+AS
+BEGIN
+	DELETE FROM NhanVien WHERE idnv = @IDNV
+END

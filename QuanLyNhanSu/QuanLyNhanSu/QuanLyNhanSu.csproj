@@ -66,6 +66,12 @@
     <Compile Include="frmDangNhap.Designer.cs">
       <DependentUpon>frmDangNhap.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmDeleteEmp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDeleteEmp.Designer.cs">
+      <DependentUpon>frmDeleteEmp.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDepartment.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +117,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmDangNhap.resx">
       <DependentUpon>frmDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDeleteEmp.resx">
+      <DependentUpon>frmDeleteEmp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmDepartment.resx">
       <DependentUpon>frmDepartment.cs</DependentUpon>

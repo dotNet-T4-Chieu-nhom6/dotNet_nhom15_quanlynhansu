@@ -7,12 +7,13 @@ using System.Data.SqlClient;
 
 namespace QuanLyNhanSu
 {
-    internal class Connection
+    public class Connection
     {
-        public static string ConString = "Data Source=DESKTOP-G925OAP;Initial Catalog=QuanLyNhanSu;Integrated Security=True;TrustServerCertificate=True";
         public static SqlConnection GetSqlConnection()
         {
-            return new SqlConnection(ConString);
+            string conStr = "Data Source=.;Initial Catalog=QuanLyNhanSu;Integrated Security=True";
+            SqlConnection conn = new SqlConnection(conStr);
+            return conn;
         }
     }
 }

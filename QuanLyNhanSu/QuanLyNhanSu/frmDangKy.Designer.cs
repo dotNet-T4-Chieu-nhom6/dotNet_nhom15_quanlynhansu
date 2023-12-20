@@ -71,6 +71,7 @@ namespace QuanLyNhanSu
             this.txt_XacNhanPass.Font = new System.Drawing.Font("Times New Roman", 12F);
             this.txt_XacNhanPass.Location = new System.Drawing.Point(131, 158);
             this.txt_XacNhanPass.Name = "txt_XacNhanPass";
+            this.txt_XacNhanPass.PasswordChar = '*';
             this.txt_XacNhanPass.Size = new System.Drawing.Size(267, 26);
             this.txt_XacNhanPass.TabIndex = 17;
             // 
@@ -79,6 +80,7 @@ namespace QuanLyNhanSu
             this.txt_Pass.Font = new System.Drawing.Font("Times New Roman", 12F);
             this.txt_Pass.Location = new System.Drawing.Point(131, 103);
             this.txt_Pass.Name = "txt_Pass";
+            this.txt_Pass.PasswordChar = '*';
             this.txt_Pass.Size = new System.Drawing.Size(267, 26);
             this.txt_Pass.TabIndex = 16;
             // 

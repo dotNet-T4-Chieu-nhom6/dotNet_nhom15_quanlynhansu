@@ -191,6 +191,7 @@ namespace QuanLyNhanSu
                 MessageBox.Show("Không được phép xóa người dùng có quyền admin.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
+
             //if (dataGridView1.SelectedRows.Count == 0)
             //{
             //    MessageBox.Show("Hãy chọn một dòng để xóa.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);

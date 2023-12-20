@@ -34,7 +34,6 @@ namespace QuanLyNhanSu
             this.quảnLýTàiKhoảnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.đăngXuấtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quảnLýToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.nhânViênToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.phòngBanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.thốngKêToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.trợGiúpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -43,10 +42,6 @@ namespace QuanLyNhanSu
             this.btn_Them = new System.Windows.Forms.ToolStripButton();
             this.btn_Sua = new System.Windows.Forms.ToolStripButton();
             this.btn_Xoa = new System.Windows.Forms.ToolStripButton();
-            this.btn_Save = new System.Windows.Forms.ToolStripButton();
-            this.btn_Huy = new System.Windows.Forms.ToolStripButton();
-            this.btn_Update = new System.Windows.Forms.ToolStripButton();
-            this.btn_In = new System.Windows.Forms.ToolStripButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btn_TimKiem = new System.Windows.Forms.Button();
             this.txt_MaNhanVien = new System.Windows.Forms.TextBox();
@@ -106,23 +101,16 @@ namespace QuanLyNhanSu
             // quảnLýToolStripMenuItem
             // 
             this.quảnLýToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.nhânViênToolStripMenuItem,
             this.phòngBanToolStripMenuItem});
             this.quảnLýToolStripMenuItem.Font = new System.Drawing.Font("Times New Roman", 12F);
             this.quảnLýToolStripMenuItem.Name = "quảnLýToolStripMenuItem";
             this.quảnLýToolStripMenuItem.Size = new System.Drawing.Size(86, 26);
             this.quảnLýToolStripMenuItem.Text = "Quản lý";
             // 
-            // nhânViênToolStripMenuItem
-            // 
-            this.nhânViênToolStripMenuItem.Name = "nhânViênToolStripMenuItem";
-            this.nhânViênToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.nhânViênToolStripMenuItem.Text = "Nhân Viên";
-            // 
             // phòngBanToolStripMenuItem
             // 
             this.phòngBanToolStripMenuItem.Name = "phòngBanToolStripMenuItem";
-            this.phòngBanToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.phòngBanToolStripMenuItem.Size = new System.Drawing.Size(178, 26);
             this.phòngBanToolStripMenuItem.Text = "Phòng Ban";
             this.phòngBanToolStripMenuItem.Click += new System.EventHandler(this.phòngBanToolStripMenuItem_Click);
             // 
@@ -147,11 +135,7 @@ namespace QuanLyNhanSu
             this.btn_Show,
             this.btn_Them,
             this.btn_Sua,
-            this.btn_Xoa,
-            this.btn_Save,
-            this.btn_Huy,
-            this.btn_Update,
-            this.btn_In});
+            this.btn_Xoa});
             this.toolStrip1.Location = new System.Drawing.Point(0, 30);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(1167, 29);
@@ -197,42 +181,6 @@ namespace QuanLyNhanSu
             this.btn_Xoa.Size = new System.Drawing.Size(67, 26);
             this.btn_Xoa.Text = "Xóa";
             this.btn_Xoa.Click += new System.EventHandler(this.btn_Xoa_Click);
-            // 
-            // btn_Save
-            // 
-            this.btn_Save.Font = new System.Drawing.Font("Times New Roman", 12F);
-            this.btn_Save.Image = global::QuanLyNhanSu.Properties.Resources.iconSave;
-            this.btn_Save.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btn_Save.Name = "btn_Save";
-            this.btn_Save.Size = new System.Drawing.Size(65, 26);
-            this.btn_Save.Text = "Lưu";
-            // 
-            // btn_Huy
-            // 
-            this.btn_Huy.Font = new System.Drawing.Font("Times New Roman", 12F);
-            this.btn_Huy.Image = global::QuanLyNhanSu.Properties.Resources.iconHuy;
-            this.btn_Huy.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btn_Huy.Name = "btn_Huy";
-            this.btn_Huy.Size = new System.Drawing.Size(66, 26);
-            this.btn_Huy.Text = "Hủy";
-            // 
-            // btn_Update
-            // 
-            this.btn_Update.Font = new System.Drawing.Font("Times New Roman", 12F);
-            this.btn_Update.Image = global::QuanLyNhanSu.Properties.Resources.iconUpdate;
-            this.btn_Update.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btn_Update.Name = "btn_Update";
-            this.btn_Update.Size = new System.Drawing.Size(103, 26);
-            this.btn_Update.Text = "Cập nhật";
-            // 
-            // btn_In
-            // 
-            this.btn_In.Font = new System.Drawing.Font("Times New Roman", 12F);
-            this.btn_In.Image = global::QuanLyNhanSu.Properties.Resources.iconIn;
-            this.btn_In.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btn_In.Name = "btn_In";
-            this.btn_In.Size = new System.Drawing.Size(49, 26);
-            this.btn_In.Text = "In";
             // 
             // groupBox1
             // 
@@ -397,7 +345,6 @@ namespace QuanLyNhanSu
         private System.Windows.Forms.ToolStripMenuItem quảnLýTàiKhoảnToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem đăngXuấtToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem quảnLýToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem nhânViênToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem phòngBanToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem thốngKêToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem trợGiúpToolStripMenuItem;
@@ -405,10 +352,6 @@ namespace QuanLyNhanSu
         private System.Windows.Forms.ToolStripButton btn_Xoa;
         private System.Windows.Forms.ToolStripButton btn_Sua;
         private System.Windows.Forms.ToolStripButton btn_Them;
-        private System.Windows.Forms.ToolStripButton btn_Save;
-        private System.Windows.Forms.ToolStripButton btn_Huy;
-        private System.Windows.Forms.ToolStripButton btn_Update;
-        private System.Windows.Forms.ToolStripButton btn_In;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox txt_HoTen;
         private System.Windows.Forms.DateTimePicker txt_NgaySinh;

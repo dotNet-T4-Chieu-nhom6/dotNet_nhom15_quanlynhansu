@@ -53,7 +53,7 @@ namespace QuanLyNhanSu
                     frmMain mn = new frmMain(id);
                     mn.ShowDialog();
                     mn = null;
-                    this.Show();
+                    this.Hide();
                 }
                 else
                 {

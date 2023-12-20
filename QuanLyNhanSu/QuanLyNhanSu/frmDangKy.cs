@@ -17,6 +17,11 @@ namespace QuanLyNhanSu
         public frmDangKy()
         {
             InitializeComponent();
+            txt_User.Text = "";
+            txt_Pass.Text = "";
+            txt_XacNhanPass.Text = "";
+            txt_Email.Text = "";
+            comboBox_Quyen.SelectedIndex = -1;
         }
 
         Modify modify = new Modify();
@@ -40,7 +45,7 @@ namespace QuanLyNhanSu
             string MatKhau = txt_Pass.Text;
             string xacNhanMatKhau = txt_XacNhanPass.Text;
             string Email = txt_Email.Text;
-            string Admin;
+            string Admin = comboBox_Quyen.Text;
 
             if (tenTk.Trim() == "")
             {
@@ -78,19 +83,16 @@ namespace QuanLyNhanSu
                 return;
             }
 
+            if (modify.Userss("Select * from Users where nameU = '" + tenTk + "'").Count != 0)
+            {
+                MessageBox.Show("Tên tài khoản này đã được đăng kí , vui lòng nhập tên khác");
+                return;
+            }
+
             if (modify.Userss("Select * from Users where emailU = '" + Email + "'").Count != 0)
             {
                 MessageBox.Show("Email này đã được đăng kí , vui lòng nhập email khác");
                 return;
-            }
-
-            if (chbAdmin.Checked == true)
-            {
-                Admin = "admin";
-            }
-            else
-            {
-                Admin = "user";
             }
 
             try
@@ -98,10 +100,7 @@ namespace QuanLyNhanSu
                 string query = "Insert into Users(nameU, passU, emailU, phanquyen ) Values " +
                     "('" + tenTk + "', '" + MatKhau + "', '" + Email + "', N'" + Admin + "')";
                 modify.Command(query);
-                this.Hide();
-                frmDangNhap mn = new frmDangNhap();
-                mn.ShowDialog();
-                mn = null;
+                DialogResult = DialogResult.OK;
                 this.Close();
             }
             catch

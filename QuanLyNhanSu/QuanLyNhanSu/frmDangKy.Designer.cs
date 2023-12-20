@@ -38,7 +38,7 @@ namespace QuanLyNhanSu
             this.ptb3 = new System.Windows.Forms.PictureBox();
             this.ptb2 = new System.Windows.Forms.PictureBox();
             this.ptb1 = new System.Windows.Forms.PictureBox();
-            this.chbAdmin = new System.Windows.Forms.CheckBox();
+            this.comboBox_Quyen = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.ptb4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb2)).BeginInit();
@@ -50,7 +50,7 @@ namespace QuanLyNhanSu
             this.btn_DangKy.BackColor = System.Drawing.Color.Black;
             this.btn_DangKy.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_DangKy.ForeColor = System.Drawing.Color.White;
-            this.btn_DangKy.Location = new System.Drawing.Point(179, 286);
+            this.btn_DangKy.Location = new System.Drawing.Point(180, 309);
             this.btn_DangKy.Name = "btn_DangKy";
             this.btn_DangKy.Size = new System.Drawing.Size(124, 38);
             this.btn_DangKy.TabIndex = 19;
@@ -132,23 +132,27 @@ namespace QuanLyNhanSu
             this.ptb1.TabIndex = 20;
             this.ptb1.TabStop = false;
             // 
-            // chbAdmin
+            // comboBox_Quyen
             // 
-            this.chbAdmin.AutoSize = true;
-            this.chbAdmin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chbAdmin.Location = new System.Drawing.Point(131, 256);
-            this.chbAdmin.Name = "chbAdmin";
-            this.chbAdmin.Size = new System.Drawing.Size(65, 20);
-            this.chbAdmin.TabIndex = 24;
-            this.chbAdmin.Text = "Admin";
-            this.chbAdmin.UseVisualStyleBackColor = true;
+            this.comboBox_Quyen.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox_Quyen.Font = new System.Drawing.Font("Times New Roman", 12F);
+            this.comboBox_Quyen.FormattingEnabled = true;
+            this.comboBox_Quyen.Items.AddRange(new object[] {
+            "admin",
+            "user",
+            "manager"});
+            this.comboBox_Quyen.Location = new System.Drawing.Point(131, 260);
+            this.comboBox_Quyen.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBox_Quyen.Name = "comboBox_Quyen";
+            this.comboBox_Quyen.Size = new System.Drawing.Size(267, 27);
+            this.comboBox_Quyen.TabIndex = 24;
             // 
             // frmDangKy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(465, 344);
-            this.Controls.Add(this.chbAdmin);
+            this.ClientSize = new System.Drawing.Size(465, 370);
+            this.Controls.Add(this.comboBox_Quyen);
             this.Controls.Add(this.ptb4);
             this.Controls.Add(this.ptb3);
             this.Controls.Add(this.ptb2);
@@ -180,7 +184,7 @@ namespace QuanLyNhanSu
         private System.Windows.Forms.TextBox txt_XacNhanPass;
         private System.Windows.Forms.TextBox txt_Pass;
         private System.Windows.Forms.TextBox txt_User;
-        private System.Windows.Forms.CheckBox chbAdmin;
+        private System.Windows.Forms.ComboBox comboBox_Quyen;
     }
 }
 

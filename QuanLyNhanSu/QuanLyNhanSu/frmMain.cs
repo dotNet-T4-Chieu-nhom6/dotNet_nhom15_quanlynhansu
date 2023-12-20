@@ -15,18 +15,17 @@ namespace QuanLyNhanSu
 {
     public partial class frmMain : Form
     {
-        private int admin;
+        private int Quyen;
 
         public frmMain()
         {
-            InitializeComponent();        
-            
+            InitializeComponent();
         }
 
         public frmMain(int id)
         {
             InitializeComponent();
-            this.admin = id;
+            this.Quyen = id;
         }
 
 
@@ -63,43 +62,135 @@ namespace QuanLyNhanSu
 
         private void frmMain_Load(object sender, EventArgs e)
         {
+            dgv_NhanVien.DataSource = null;
             dgv_NhanVien.DataSource = Bus_Layer.GetAllEmps();
-            if(admin == 0)
+            if(Quyen == 2)
             {
-                menuStrip1.Enabled = false;
+                quảnLýToolStripMenuItem.Enabled = false;
+                quảnLýTàiKhoảnToolStripMenuItem.Enabled = false;
+                thốngKêToolStripMenuItem.Enabled = false;
+                trợGiúpToolStripMenuItem.Enabled = false;
                 toolStrip1.Enabled = false;
             }
-            else
+            else if (Quyen == 1)
             {
-                menuStrip1.Enabled = true;
-                toolStrip1.Enabled = true;
+                quảnLýTàiKhoảnToolStripMenuItem.Enabled = false;
             }    
         }
 
         private void btn_Sua_Click(object sender, EventArgs e)
         {
             this.Hide();
-            frmEditEmployee f = new frmEditEmployee();
-            f.Show();
+            frmEditEmployee frmEE = new frmEditEmployee();
+            DialogResult result = frmEE.ShowDialog();
+
+            if (result == DialogResult.OK)
+            { this.Show(); }
+            else { this.Show(); }
         }
 
         private void btn_Them_Click(object sender, EventArgs e)
         {
             this.Hide();
-            frmAddEmployee f = new frmAddEmployee();
-            f.Show();
+            frmAddEmployee frmAE = new frmAddEmployee();
+            DialogResult result = frmAE.ShowDialog();
+
+            if (result == DialogResult.OK)
+            { this.Show(); }
+            else { this.Show(); }
+
         }
 
         private void btn_Xoa_Click(object sender, EventArgs e)
         {
             this.Hide();
-            frmDeleteEmp f = new frmDeleteEmp();
-            f.Show();
+            frmDeleteEmp frmDE = new frmDeleteEmp();
+            DialogResult result = frmDE.ShowDialog();
+
+            if (result == DialogResult.OK)
+            { this.Show(); }
+            else { this.Show(); }
         }
 
         private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Hide();
+            frmDangNhap mn = new frmDangNhap();
+            mn.ShowDialog();
+            mn = null;
+            this.Close();
+        }
+
+        private void btn_TimKiem_Click(object sender, EventArgs e)
+        {
+            string maNV = txt_MaNhanVien.Text;
+            string hoTenNV = txt_HoTen.Text;
+            if (maNV.Trim() == "" && hoTenNV.Trim() == "")
+            {
+                frmMain_Load(sender, e);
+            }
+            else if (hoTenNV.Trim() == "")
+            {
+                TimKiemByID(Convert.ToInt32(maNV));
+                txt_MaNhanVien.Text = "";
+                txt_HoTen.Text = "";
+            }
+            else
+            {
+                TimKiemByName(hoTenNV);
+                txt_MaNhanVien.Text = "";
+                txt_HoTen.Text = "";
+            }
+        }
+
+        public void TimKiemByID(int manv)
+        {
+            string query = "Select * from NhanVien Where idnv =" + manv + "";
+            using (SqlConnection con = Connection.GetSqlConnection())
+            {
+                con.Open();
+                SqlCommand cmd = new SqlCommand(query, con);
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                dgv_NhanVien.DataSource = null;
+                dgv_NhanVien.DataSource = dt;
+            }
+        }
+
+        public void TimKiemByName(string name)
+        {
+            string query = "Select * from NhanVien Where tennv = N'" + name + "'";
+            using (SqlConnection con = Connection.GetSqlConnection())
+            {
+                con.Open();
+                SqlCommand cmd = new SqlCommand(query, con);
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                dgv_NhanVien.DataSource = null;
+                dgv_NhanVien.DataSource = dt;
+            }
+        }
+
+        private void btn_Show_Click(object sender, EventArgs e)
+        {
+            frmMain_Load(sender, e);
+        }
+
+        private void txt_MaNhanVien_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Xác thực rằng phím vừa nhấn không phải CTRL hoặc không phải dạng số
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+
+            // Nếu bạn muốn, bạn có thể cho phép nhập số thực với dấu chấm
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
         }
     }
 }

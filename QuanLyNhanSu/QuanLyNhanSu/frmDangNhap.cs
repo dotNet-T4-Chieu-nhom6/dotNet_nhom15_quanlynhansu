@@ -40,20 +40,24 @@ namespace QuanLyNhanSu
                 if (modify.Userss(query).Count != 0)
                 {
                     MessageBox.Show("Đăng Nhập Thành Công!", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    string admin = modify.Userss(query)[0].admin;
-                    if(String.Compare(admin, "admin", true) == 0)
+                    string Quyen = modify.Userss(query)[0].admin;
+                    if(String.Compare(Quyen, "admin", true) == 0)
+                    {
+                        id = 0;
+                    }
+                    else if (String.Compare(Quyen, "manager", true) == 0)
                     {
                         id = 1;
                     }
                     else
                     {
-                        id = 0;
+                        id = 2;
                     }
                     this.Hide();
                     frmMain mn = new frmMain(id);
                     mn.ShowDialog();
                     mn = null;
-                    this.Hide();
+                    this.Close();
                 }
                 else
                 {
@@ -68,20 +72,24 @@ namespace QuanLyNhanSu
         private void lb_QuenMatKhau_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Hide();
-            frmQuenMatKhau mn = new frmQuenMatKhau();
-            mn.ShowDialog();
-            mn = null;
-            this.Show();
+            frmQuenMatKhau frmQMK = new frmQuenMatKhau();
+            DialogResult result = frmQMK.ShowDialog();
+
+            if (result == DialogResult.OK)
+            { this.Show(); }
+            else { this.Show(); }
         }
 
         private void lb_DangKi_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            
+
             this.Hide();
-            frmDangKy mn = new frmDangKy();
-            mn.ShowDialog();
-            mn = null;
-            this.Close();
+            frmDangKy frmDK = new frmDangKy();
+            DialogResult result = frmDK.ShowDialog();
+
+            if (result == DialogResult.OK)
+            { this.Show(); }
+            else { this.Show(); }
         }
     }
 }

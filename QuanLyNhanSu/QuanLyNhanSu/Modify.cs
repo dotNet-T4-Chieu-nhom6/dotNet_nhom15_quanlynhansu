@@ -31,6 +31,7 @@ namespace QuanLyNhanSu
             }
             return Userss;
         }
+
         public void Command(string query)
         {
             using (SqlConnection sqlConnection = Connection.GetSqlConnection())

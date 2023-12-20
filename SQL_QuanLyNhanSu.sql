@@ -30,7 +30,7 @@ ngaysinh Datetime,
 gioitinh nvarchar(100),
 diachi nvarchar(MAX),
 email varchar(100),
-didong varchar(100),
+didong int,
 vanhoa nvarchar(100),
 chuyenmon nvarchar(100),
 idphongban int ,
@@ -63,8 +63,8 @@ Insert into Users(nameU, passU, emailU, phanquyen ) Values
 Go
 Insert into NhanVien
 Values
-(N'Võ Thu Thủy','2001-01-15',N'Nữ',N'123 Đường Lê Văn Khương Quận 12','0777777777','thuthuy@gmail.com',N'nghe nhạc',N'tính toán',1,6000000),
-(N'Lê Thành Công','2002-02-17',N'Nam',N'456 Quận Gò Vấp','0666666666','thanhcong@gmail.com',N'đọc sách',N'tính toán',2,8000000)
+(N'Võ Thu Thủy','2001-01-15',N'Nữ',N'123 Đường Lê Văn Khương Quận 12','thuthuy@gmail.com','0777777777',N'nghe nhạc',N'tính toán',1,6000000),
+(N'Lê Thành Công','2002-02-17',N'Nam',N'456 Quận Gò Vấp','thanhcong@gmail.com','0666666666',N'đọc sách',N'tính toán',2,8000000)
 Go 
 Insert into HopDong(idhd, loaihd,chucvu, trangthai,phucap,luongHD) Values
 ('987654', N'kinh doanh', N'Kế toán', N'đi làm đầy đủ', 200000,5000000),
@@ -84,7 +84,7 @@ CREATE PROC EditEmps
 @GIOITINH NVARCHAR(10),
 @DIACHI NVARCHAR(100),
 @EMAIL VARCHAR(100),
-@DIDONG VARCHAR(20),
+@DIDONG INT,
 @VANHOA NVARCHAR(100),
 @CHUYENMON NVARCHAR(100),
 @IDPB INT,
@@ -103,7 +103,7 @@ CREATE PROC AddEmp
 @GIOITINH NVARCHAR(10),
 @DIACHI NVARCHAR(100),
 @EMAIL VARCHAR(100),
-@DIDONG VARCHAR(20),
+@DIDONG INT,
 @VANHOA NVARCHAR(100),
 @CHUYENMON NVARCHAR(100),
 @IDPB INT,

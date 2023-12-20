@@ -55,9 +55,8 @@ namespace QuanLyNhanSu
             DialogResult r = MessageBox.Show("Bạn có chắc muốn thoát?", "Thoát", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (r == DialogResult.Yes)
             {
-                this.Hide();
-                frmMain f = new frmMain();
-                f.Show();
+                DialogResult = DialogResult.OK;
+                this.Close();
             }
         }
 

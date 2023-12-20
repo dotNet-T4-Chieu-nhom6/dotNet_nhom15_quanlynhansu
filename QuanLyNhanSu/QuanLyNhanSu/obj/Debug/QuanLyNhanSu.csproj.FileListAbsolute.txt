@@ -71,6 +71,7 @@ C:\Users\HP\Desktop\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\QuanLyNhanSu\obj\Deb
 C:\Users\HP\Desktop\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.csproj.CopyComplete
 C:\Users\HP\Desktop\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.exe
 C:\Users\HP\Desktop\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.pdb
+<<<<<<< HEAD
 D:\HuynhHuuDuc_2001207422\DoAnNET\New folder\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\QuanLyNhanSu\bin\Debug\QuanLyNhanSu.exe.config
 D:\HuynhHuuDuc_2001207422\DoAnNET\New folder\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\QuanLyNhanSu\bin\Debug\QuanLyNhanSu.exe
 D:\HuynhHuuDuc_2001207422\DoAnNET\New folder\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\QuanLyNhanSu\bin\Debug\QuanLyNhanSu.pdb
@@ -96,3 +97,28 @@ D:\HuynhHuuDuc_2001207422\DoAnNET\New folder\dotNet_nhom15_quanlynhansu\QuanLyNh
 D:\HuynhHuuDuc_2001207422\DoAnNET\New folder\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.csproj.CopyComplete
 D:\HuynhHuuDuc_2001207422\DoAnNET\New folder\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.exe
 D:\HuynhHuuDuc_2001207422\DoAnNET\New folder\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.pdb
+=======
+H:\FinalNET\QuanLyNhanSu\QuanLyNhanSu\bin\Debug\QuanLyNhanSu.exe.config
+H:\FinalNET\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.exe
+H:\FinalNET\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.pdb
+H:\FinalNET\QuanLyNhanSu\QuanLyNhanSu\bin\Debug\QuanLyNhanSu.exe
+H:\FinalNET\QuanLyNhanSu\QuanLyNhanSu\bin\Debug\QuanLyNhanSu.pdb
+H:\FinalNET\QuanLyNhanSu\QuanLyNhanSu\bin\Debug\BLL.dll
+H:\FinalNET\QuanLyNhanSu\QuanLyNhanSu\bin\Debug\DTO.dll
+H:\FinalNET\QuanLyNhanSu\QuanLyNhanSu\bin\Debug\DAL.dll
+H:\FinalNET\QuanLyNhanSu\QuanLyNhanSu\bin\Debug\BLL.pdb
+H:\FinalNET\QuanLyNhanSu\QuanLyNhanSu\bin\Debug\DTO.pdb
+H:\FinalNET\QuanLyNhanSu\QuanLyNhanSu\bin\Debug\DAL.pdb
+H:\FinalNET\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.csprojResolveAssemblyReference.cache
+H:\FinalNET\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.frmAddEmployee.resources
+H:\FinalNET\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.frmDangKy.resources
+H:\FinalNET\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.frmDangNhap.resources
+H:\FinalNET\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.frmDeleteEmp.resources
+H:\FinalNET\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.frmDepartment.resources
+H:\FinalNET\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.frmEditEmployee.resources
+H:\FinalNET\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.frmMain.resources
+H:\FinalNET\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.frmQuenMatKhau.resources
+H:\FinalNET\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.frmUsers.resources
+H:\FinalNET\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.Properties.Resources.resources
+H:\FinalNET\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.csproj.GenerateResource.Cache
+>>>>>>> a9dd1dcf6928a716e012791583d02aeeb938c6f2

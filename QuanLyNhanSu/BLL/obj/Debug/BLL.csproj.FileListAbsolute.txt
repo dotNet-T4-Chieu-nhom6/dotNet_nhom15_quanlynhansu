@@ -29,6 +29,7 @@ C:\Users\HP\Desktop\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\BLL\obj\Debug\BLL.cs
 C:\Users\HP\Desktop\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\BLL\obj\Debug\BLL.csproj.CopyComplete
 C:\Users\HP\Desktop\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\BLL\obj\Debug\BLL.dll
 C:\Users\HP\Desktop\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\BLL\obj\Debug\BLL.pdb
+<<<<<<< HEAD
 D:\HuynhHuuDuc_2001207422\DoAnNET\New folder\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\BLL\bin\Debug\BLL.dll
 D:\HuynhHuuDuc_2001207422\DoAnNET\New folder\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\BLL\bin\Debug\BLL.pdb
 D:\HuynhHuuDuc_2001207422\DoAnNET\New folder\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\BLL\bin\Debug\DAL.dll
@@ -40,3 +41,14 @@ D:\HuynhHuuDuc_2001207422\DoAnNET\New folder\dotNet_nhom15_quanlynhansu\QuanLyNh
 D:\HuynhHuuDuc_2001207422\DoAnNET\New folder\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\BLL\obj\Debug\BLL.csproj.CopyComplete
 D:\HuynhHuuDuc_2001207422\DoAnNET\New folder\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\BLL\obj\Debug\BLL.dll
 D:\HuynhHuuDuc_2001207422\DoAnNET\New folder\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\BLL\obj\Debug\BLL.pdb
+=======
+H:\FinalNET\QuanLyNhanSu\BLL\bin\Debug\BLL.dll
+H:\FinalNET\QuanLyNhanSu\BLL\bin\Debug\BLL.pdb
+H:\FinalNET\QuanLyNhanSu\BLL\bin\Debug\DAL.dll
+H:\FinalNET\QuanLyNhanSu\BLL\bin\Debug\DTO.dll
+H:\FinalNET\QuanLyNhanSu\BLL\bin\Debug\DAL.pdb
+H:\FinalNET\QuanLyNhanSu\BLL\bin\Debug\DTO.pdb
+H:\FinalNET\QuanLyNhanSu\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+H:\FinalNET\QuanLyNhanSu\BLL\obj\Debug\BLL.dll
+H:\FinalNET\QuanLyNhanSu\BLL\obj\Debug\BLL.pdb
+>>>>>>> a9dd1dcf6928a716e012791583d02aeeb938c6f2

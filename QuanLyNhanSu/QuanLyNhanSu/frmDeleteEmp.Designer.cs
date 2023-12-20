@@ -106,9 +106,10 @@
             this.Controls.Add(this.dtgv_Emp);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmDeleteEmp";
             this.Text = "frmDeleteEmp";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmDeleteEmp_FormClosing);
             this.Load += new System.EventHandler(this.frmDeleteEmp_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_Emp)).EndInit();
             this.groupBox1.ResumeLayout(false);

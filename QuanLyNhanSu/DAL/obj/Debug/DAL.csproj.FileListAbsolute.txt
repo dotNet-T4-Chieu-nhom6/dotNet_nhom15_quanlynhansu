@@ -23,6 +23,7 @@ C:\Users\HP\Desktop\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\DAL\obj\Debug\DAL.cs
 C:\Users\HP\Desktop\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\DAL\obj\Debug\DAL.csproj.CopyComplete
 C:\Users\HP\Desktop\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\DAL\obj\Debug\DAL.dll
 C:\Users\HP\Desktop\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\DAL\obj\Debug\DAL.pdb
+<<<<<<< HEAD
 D:\HuynhHuuDuc_2001207422\DoAnNET\New folder\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\DAL\bin\Debug\DAL.dll
 D:\HuynhHuuDuc_2001207422\DoAnNET\New folder\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\DAL\bin\Debug\DAL.pdb
 D:\HuynhHuuDuc_2001207422\DoAnNET\New folder\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\DAL\bin\Debug\DTO.dll
@@ -32,3 +33,12 @@ D:\HuynhHuuDuc_2001207422\DoAnNET\New folder\dotNet_nhom15_quanlynhansu\QuanLyNh
 D:\HuynhHuuDuc_2001207422\DoAnNET\New folder\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\DAL\obj\Debug\DAL.csproj.CopyComplete
 D:\HuynhHuuDuc_2001207422\DoAnNET\New folder\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\DAL\obj\Debug\DAL.dll
 D:\HuynhHuuDuc_2001207422\DoAnNET\New folder\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\DAL\obj\Debug\DAL.pdb
+=======
+H:\FinalNET\QuanLyNhanSu\DAL\bin\Debug\DAL.dll
+H:\FinalNET\QuanLyNhanSu\DAL\bin\Debug\DAL.pdb
+H:\FinalNET\QuanLyNhanSu\DAL\bin\Debug\DTO.dll
+H:\FinalNET\QuanLyNhanSu\DAL\bin\Debug\DTO.pdb
+H:\FinalNET\QuanLyNhanSu\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+H:\FinalNET\QuanLyNhanSu\DAL\obj\Debug\DAL.dll
+H:\FinalNET\QuanLyNhanSu\DAL\obj\Debug\DAL.pdb
+>>>>>>> a9dd1dcf6928a716e012791583d02aeeb938c6f2

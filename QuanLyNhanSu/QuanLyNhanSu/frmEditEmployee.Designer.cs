@@ -29,31 +29,31 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.btn_Exit = new System.Windows.Forms.Button();
             this.btn_Save = new System.Windows.Forms.Button();
-            this.txt_EmpID = new System.Windows.Forms.TextBox();
-            this.lb_EmpID = new System.Windows.Forms.Label();
-            this.dtgv_Emp = new System.Windows.Forms.DataGridView();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txt_Name = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
             this.txt_Department = new System.Windows.Forms.TextBox();
             this.txt_Expertise = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.txt_Education = new System.Windows.Forms.TextBox();
-            this.txt_PhoneNumber = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txt_Gender = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txt_Address = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txt_Email = new System.Windows.Forms.TextBox();
+            this.txt_EmpID = new System.Windows.Forms.TextBox();
             this.txt_Salary = new System.Windows.Forms.TextBox();
+            this.txt_Email = new System.Windows.Forms.TextBox();
+            this.txt_Education = new System.Windows.Forms.TextBox();
+            this.txt_Address = new System.Windows.Forms.TextBox();
+            this.txt_PhoneNumber = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txt_Gender = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.lb_EmpID = new System.Windows.Forms.Label();
+            this.txt_Name = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.dtgv_Emp = new System.Windows.Forms.DataGridView();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_Emp)).BeginInit();
             this.SuspendLayout();
@@ -91,6 +91,13 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin cá nhân";
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(101, 71);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(265, 29);
+            this.dateTimePicker1.TabIndex = 18;
+            // 
             // btn_Exit
             // 
             this.btn_Exit.Location = new System.Drawing.Point(636, 241);
@@ -111,60 +118,6 @@
             this.btn_Save.UseVisualStyleBackColor = true;
             this.btn_Save.Click += new System.EventHandler(this.btn_Save_Click);
             // 
-            // txt_EmpID
-            // 
-            this.txt_EmpID.Location = new System.Drawing.Point(101, 241);
-            this.txt_EmpID.Name = "txt_EmpID";
-            this.txt_EmpID.Size = new System.Drawing.Size(265, 29);
-            this.txt_EmpID.TabIndex = 12;
-            // 
-            // lb_EmpID
-            // 
-            this.lb_EmpID.AutoSize = true;
-            this.lb_EmpID.Location = new System.Drawing.Point(7, 244);
-            this.lb_EmpID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lb_EmpID.Name = "lb_EmpID";
-            this.lb_EmpID.Size = new System.Drawing.Size(65, 21);
-            this.lb_EmpID.TabIndex = 5;
-            this.lb_EmpID.Text = "Mã NV";
-            // 
-            // dtgv_Emp
-            // 
-            this.dtgv_Emp.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgv_Emp.Location = new System.Drawing.Point(12, 298);
-            this.dtgv_Emp.Name = "dtgv_Emp";
-            this.dtgv_Emp.RowTemplate.Height = 24;
-            this.dtgv_Emp.Size = new System.Drawing.Size(817, 293);
-            this.dtgv_Emp.TabIndex = 6;
-            this.dtgv_Emp.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgv_Emp_CellClick);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(7, 35);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(60, 21);
-            this.label2.TabIndex = 10;
-            this.label2.Text = "Họ tên";
-            // 
-            // txt_Name
-            // 
-            this.txt_Name.Location = new System.Drawing.Point(101, 32);
-            this.txt_Name.Name = "txt_Name";
-            this.txt_Name.Size = new System.Drawing.Size(265, 29);
-            this.txt_Name.TabIndex = 17;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(384, 199);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(86, 21);
-            this.label10.TabIndex = 3;
-            this.label10.Text = "Mã phòng";
-            // 
             // txt_Department
             // 
             this.txt_Department.Location = new System.Drawing.Point(492, 196);
@@ -180,6 +133,65 @@
             this.txt_Expertise.Size = new System.Drawing.Size(265, 29);
             this.txt_Expertise.TabIndex = 11;
             // 
+            // txt_EmpID
+            // 
+            this.txt_EmpID.Location = new System.Drawing.Point(101, 241);
+            this.txt_EmpID.Name = "txt_EmpID";
+            this.txt_EmpID.Size = new System.Drawing.Size(265, 29);
+            this.txt_EmpID.TabIndex = 12;
+            // 
+            // txt_Salary
+            // 
+            this.txt_Salary.Location = new System.Drawing.Point(101, 196);
+            this.txt_Salary.Name = "txt_Salary";
+            this.txt_Salary.Size = new System.Drawing.Size(265, 29);
+            this.txt_Salary.TabIndex = 12;
+            // 
+            // txt_Email
+            // 
+            this.txt_Email.Location = new System.Drawing.Point(101, 150);
+            this.txt_Email.Name = "txt_Email";
+            this.txt_Email.Size = new System.Drawing.Size(265, 29);
+            this.txt_Email.TabIndex = 12;
+            // 
+            // txt_Education
+            // 
+            this.txt_Education.Location = new System.Drawing.Point(492, 112);
+            this.txt_Education.Name = "txt_Education";
+            this.txt_Education.Size = new System.Drawing.Size(265, 29);
+            this.txt_Education.TabIndex = 13;
+            // 
+            // txt_Address
+            // 
+            this.txt_Address.Location = new System.Drawing.Point(101, 112);
+            this.txt_Address.Name = "txt_Address";
+            this.txt_Address.Size = new System.Drawing.Size(265, 29);
+            this.txt_Address.TabIndex = 14;
+            // 
+            // txt_PhoneNumber
+            // 
+            this.txt_PhoneNumber.Location = new System.Drawing.Point(492, 71);
+            this.txt_PhoneNumber.Name = "txt_PhoneNumber";
+            this.txt_PhoneNumber.Size = new System.Drawing.Size(265, 29);
+            this.txt_PhoneNumber.TabIndex = 15;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(384, 199);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(86, 21);
+            this.label10.TabIndex = 3;
+            this.label10.Text = "Mã phòng";
+            // 
+            // txt_Gender
+            // 
+            this.txt_Gender.Location = new System.Drawing.Point(492, 32);
+            this.txt_Gender.Name = "txt_Gender";
+            this.txt_Gender.Size = new System.Drawing.Size(265, 29);
+            this.txt_Gender.TabIndex = 16;
+            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -189,6 +201,33 @@
             this.label9.Size = new System.Drawing.Size(105, 21);
             this.label9.TabIndex = 3;
             this.label9.Text = "Chuyên môn";
+            // 
+            // lb_EmpID
+            // 
+            this.lb_EmpID.AutoSize = true;
+            this.lb_EmpID.Location = new System.Drawing.Point(7, 244);
+            this.lb_EmpID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lb_EmpID.Name = "lb_EmpID";
+            this.lb_EmpID.Size = new System.Drawing.Size(65, 21);
+            this.lb_EmpID.TabIndex = 5;
+            this.lb_EmpID.Text = "Mã NV";
+            // 
+            // txt_Name
+            // 
+            this.txt_Name.Location = new System.Drawing.Point(101, 32);
+            this.txt_Name.Name = "txt_Name";
+            this.txt_Name.Size = new System.Drawing.Size(265, 29);
+            this.txt_Name.TabIndex = 17;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(7, 199);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(59, 21);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Lương";
             // 
             // label8
             // 
@@ -200,19 +239,15 @@
             this.label8.TabIndex = 4;
             this.label8.Text = "Văn hóa";
             // 
-            // txt_Education
+            // label5
             // 
-            this.txt_Education.Location = new System.Drawing.Point(492, 112);
-            this.txt_Education.Name = "txt_Education";
-            this.txt_Education.Size = new System.Drawing.Size(265, 29);
-            this.txt_Education.TabIndex = 13;
-            // 
-            // txt_PhoneNumber
-            // 
-            this.txt_PhoneNumber.Location = new System.Drawing.Point(492, 71);
-            this.txt_PhoneNumber.Name = "txt_PhoneNumber";
-            this.txt_PhoneNumber.Size = new System.Drawing.Size(265, 29);
-            this.txt_PhoneNumber.TabIndex = 15;
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(7, 153);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(51, 21);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "Email";
             // 
             // label7
             // 
@@ -224,6 +259,16 @@
             this.label7.TabIndex = 6;
             this.label7.Text = "Di động";
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(7, 115);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(65, 21);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Địa chỉ";
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -233,20 +278,6 @@
             this.label6.Size = new System.Drawing.Size(76, 21);
             this.label6.TabIndex = 8;
             this.label6.Text = "Giới tính";
-            // 
-            // txt_Gender
-            // 
-            this.txt_Gender.Location = new System.Drawing.Point(492, 32);
-            this.txt_Gender.Name = "txt_Gender";
-            this.txt_Gender.Size = new System.Drawing.Size(265, 29);
-            this.txt_Gender.TabIndex = 16;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(101, 71);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(265, 29);
-            this.dateTimePicker1.TabIndex = 18;
             // 
             // label3
             // 
@@ -258,56 +289,25 @@
             this.label3.TabIndex = 9;
             this.label3.Text = "Ngày sinh";
             // 
-            // label4
+            // label2
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(7, 115);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(65, 21);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Địa chỉ";
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(7, 35);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(60, 21);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "Họ tên";
             // 
-            // txt_Address
+            // dtgv_Emp
             // 
-            this.txt_Address.Location = new System.Drawing.Point(101, 112);
-            this.txt_Address.Name = "txt_Address";
-            this.txt_Address.Size = new System.Drawing.Size(265, 29);
-            this.txt_Address.TabIndex = 14;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(7, 153);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(51, 21);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "Email";
-            // 
-            // txt_Email
-            // 
-            this.txt_Email.Location = new System.Drawing.Point(101, 150);
-            this.txt_Email.Name = "txt_Email";
-            this.txt_Email.Size = new System.Drawing.Size(265, 29);
-            this.txt_Email.TabIndex = 12;
-            // 
-            // txt_Salary
-            // 
-            this.txt_Salary.Location = new System.Drawing.Point(101, 196);
-            this.txt_Salary.Name = "txt_Salary";
-            this.txt_Salary.Size = new System.Drawing.Size(265, 29);
-            this.txt_Salary.TabIndex = 12;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(7, 199);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(59, 21);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Lương";
+            this.dtgv_Emp.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgv_Emp.Location = new System.Drawing.Point(12, 298);
+            this.dtgv_Emp.Name = "dtgv_Emp";
+            this.dtgv_Emp.RowTemplate.Height = 24;
+            this.dtgv_Emp.Size = new System.Drawing.Size(817, 293);
+            this.dtgv_Emp.TabIndex = 6;
+            this.dtgv_Emp.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgv_Emp_CellClick);
             // 
             // frmEditEmployee
             // 
@@ -320,6 +320,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmEditEmployee";
             this.Text = "frmEditEmployee";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmEditEmployee_FormClosing);
             this.Load += new System.EventHandler(this.frmEditEmployee_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

@@ -14,3 +14,12 @@ D:\HuynhHuuDuc_2001207422\DoAnNET\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\DAL\ob
 D:\HuynhHuuDuc_2001207422\DoAnNET\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\DAL\obj\Debug\DAL.csproj.CopyComplete
 D:\HuynhHuuDuc_2001207422\DoAnNET\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\DAL\obj\Debug\DAL.dll
 D:\HuynhHuuDuc_2001207422\DoAnNET\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\DAL\obj\Debug\DAL.pdb
+C:\Users\HP\Desktop\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\DAL\bin\Debug\DAL.dll
+C:\Users\HP\Desktop\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\DAL\bin\Debug\DAL.pdb
+C:\Users\HP\Desktop\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\DAL\bin\Debug\DTO.dll
+C:\Users\HP\Desktop\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\DAL\bin\Debug\DTO.pdb
+C:\Users\HP\Desktop\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\HP\Desktop\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\DAL\obj\Debug\DAL.dll
+C:\Users\HP\Desktop\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\DAL\obj\Debug\DAL.pdb

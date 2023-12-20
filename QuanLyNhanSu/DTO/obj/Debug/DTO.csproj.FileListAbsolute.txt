@@ -8,3 +8,9 @@ D:\HuynhHuuDuc_2001207422\DoAnNET\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\DTO\bi
 D:\HuynhHuuDuc_2001207422\DoAnNET\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 D:\HuynhHuuDuc_2001207422\DoAnNET\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\DTO\obj\Debug\DTO.dll
 D:\HuynhHuuDuc_2001207422\DoAnNET\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\DTO\obj\Debug\DTO.pdb
+C:\Users\HP\Desktop\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\DTO\bin\Debug\DTO.dll
+C:\Users\HP\Desktop\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\DTO\bin\Debug\DTO.pdb
+C:\Users\HP\Desktop\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\DTO\obj\Debug\DTO.dll
+C:\Users\HP\Desktop\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\DTO\obj\Debug\DTO.pdb

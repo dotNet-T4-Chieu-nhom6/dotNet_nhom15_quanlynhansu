@@ -96,5 +96,10 @@ namespace QuanLyNhanSu
             frmDeleteEmp f = new frmDeleteEmp();
             f.Show();
         }
+
+        private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }

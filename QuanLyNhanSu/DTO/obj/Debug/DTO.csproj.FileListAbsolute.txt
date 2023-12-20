@@ -3,3 +3,8 @@ H:\DOANNET\QuanLyNhanSu\DTO\bin\Debug\DTO.pdb
 H:\DOANNET\QuanLyNhanSu\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
 H:\DOANNET\QuanLyNhanSu\DTO\obj\Debug\DTO.dll
 H:\DOANNET\QuanLyNhanSu\DTO\obj\Debug\DTO.pdb
+D:\HuynhHuuDuc_2001207422\DoAnNET\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\DTO\bin\Debug\DTO.dll
+D:\HuynhHuuDuc_2001207422\DoAnNET\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\DTO\bin\Debug\DTO.pdb
+D:\HuynhHuuDuc_2001207422\DoAnNET\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\HuynhHuuDuc_2001207422\DoAnNET\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\DTO\obj\Debug\DTO.dll
+D:\HuynhHuuDuc_2001207422\DoAnNET\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\DTO\obj\Debug\DTO.pdb

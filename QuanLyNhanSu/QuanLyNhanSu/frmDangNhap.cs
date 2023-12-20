@@ -17,13 +17,51 @@ namespace QuanLyNhanSu
             InitializeComponent();
         }
 
+        Modify modify = new Modify();
+
         private void btn_DangNhap_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            frmMain mn = new frmMain();
-            mn.ShowDialog();
-            mn = null;
-            this.Show();
+            string tentk = txt_User.Text;
+            string matkhau = txt_Pass.Text;
+            int id;
+            if (tentk.Trim() == "")
+            {
+                MessageBox.Show("Vui long nhap ten tai khoan!");
+                return;
+            }
+            else if (matkhau.Trim() == "")
+            {
+                MessageBox.Show("Vui long nhap mat khau vao!");
+                return;
+            }
+            else
+            {
+                string query = "Select * from Users where nameU='" + tentk + "' and passU='" + matkhau + "'";
+                if (modify.Userss(query).Count != 0)
+                {
+                    MessageBox.Show("Đăng Nhập Thành Công!", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    string admin = modify.Userss(query)[0].admin;
+                    if(String.Compare(admin, "admin", true) == 0)
+                    {
+                        id = 1;
+                    }
+                    else
+                    {
+                        id = 0;
+                    }
+                    this.Hide();
+                    frmMain mn = new frmMain(id);
+                    mn.ShowDialog();
+                    mn = null;
+                    this.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Tên tài khoản hoặc mật khẩu không chính xác !");
+                }
+            }
+
+            
         }
 
         private void lb_QuenMatKhau_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

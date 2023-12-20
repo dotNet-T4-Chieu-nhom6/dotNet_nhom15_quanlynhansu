@@ -12,7 +12,8 @@ namespace DAL
     {
         public static SqlConnection Connect()
         {
-            string conStr = "Data Source=DESKTOP-US92MIO\\QUANGLOPXE;Initial Catalog=QuanLyNhanSu;Integrated Security=True";
+            //string conStr = "Data Source=DESKTOP-US92MIO\\QUANGLOPXE;Initial Catalog=QuanLyNhanSu;Integrated Security=True";
+            string conStr = "Data Source=LAPTOP-RHGDOGMA\\DUC;Initial Catalog=QuanLyNhanSu;Integrated Security=True";
             SqlConnection conn = new SqlConnection(conStr);
             return conn;
         }

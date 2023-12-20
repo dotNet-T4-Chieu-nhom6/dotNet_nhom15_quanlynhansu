@@ -75,6 +75,7 @@ namespace QuanLyNhanSu
             this.btn_LayLaiPass.TabIndex = 27;
             this.btn_LayLaiPass.Text = "LẤY LẠI MẬT KHẨU";
             this.btn_LayLaiPass.UseVisualStyleBackColor = false;
+            this.btn_LayLaiPass.Click += new System.EventHandler(this.btn_LayLaiPass_Click);
             // 
             // frmQuenMatKhau
             // 

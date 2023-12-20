@@ -15,10 +15,21 @@ namespace QuanLyNhanSu
 {
     public partial class frmMain : Form
     {
+        private int admin;
+
         public frmMain()
         {
-            InitializeComponent();            
+            InitializeComponent();        
+            
         }
+
+        public frmMain(int id)
+        {
+            InitializeComponent();
+            this.admin = id;
+        }
+
+
 
         private void phòngBanToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -53,6 +64,16 @@ namespace QuanLyNhanSu
         private void frmMain_Load(object sender, EventArgs e)
         {
             dgv_NhanVien.DataSource = Bus_Layer.GetAllEmps();
+            if(admin == 0)
+            {
+                menuStrip1.Enabled = false;
+                toolStrip1.Enabled = false;
+            }
+            else
+            {
+                menuStrip1.Enabled = true;
+                toolStrip1.Enabled = true;
+            }    
         }
 
         private void btn_Sua_Click(object sender, EventArgs e)

@@ -5,3 +5,12 @@ H:\DOANNET\QuanLyNhanSu\DAL\bin\Debug\DTO.dll
 H:\DOANNET\QuanLyNhanSu\DAL\bin\Debug\DTO.pdb
 H:\DOANNET\QuanLyNhanSu\DAL\obj\Debug\DAL.dll
 H:\DOANNET\QuanLyNhanSu\DAL\obj\Debug\DAL.pdb
+D:\HuynhHuuDuc_2001207422\DoAnNET\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\DAL\bin\Debug\DAL.dll
+D:\HuynhHuuDuc_2001207422\DoAnNET\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\DAL\bin\Debug\DAL.pdb
+D:\HuynhHuuDuc_2001207422\DoAnNET\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\DAL\bin\Debug\DTO.dll
+D:\HuynhHuuDuc_2001207422\DoAnNET\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\DAL\bin\Debug\DTO.pdb
+D:\HuynhHuuDuc_2001207422\DoAnNET\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+D:\HuynhHuuDuc_2001207422\DoAnNET\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\HuynhHuuDuc_2001207422\DoAnNET\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\HuynhHuuDuc_2001207422\DoAnNET\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\DAL\obj\Debug\DAL.dll
+D:\HuynhHuuDuc_2001207422\DoAnNET\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\DAL\obj\Debug\DAL.pdb

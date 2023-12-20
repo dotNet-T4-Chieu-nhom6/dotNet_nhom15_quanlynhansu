@@ -150,7 +150,7 @@
             this.label10.Location = new System.Drawing.Point(384, 199);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(82, 20);
+            this.label10.Size = new System.Drawing.Size(86, 21);
             this.label10.TabIndex = 3;
             this.label10.Text = "Mã phòng";
             // 
@@ -167,7 +167,7 @@
             this.label9.Location = new System.Drawing.Point(384, 153);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(102, 20);
+            this.label9.Size = new System.Drawing.Size(105, 21);
             this.label9.TabIndex = 3;
             this.label9.Text = "Chuyên môn";
             // 
@@ -184,7 +184,7 @@
             this.label1.Location = new System.Drawing.Point(7, 199);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(57, 20);
+            this.label1.Size = new System.Drawing.Size(59, 21);
             this.label1.TabIndex = 5;
             this.label1.Text = "Lương";
             // 
@@ -194,7 +194,7 @@
             this.label8.Location = new System.Drawing.Point(384, 115);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(69, 20);
+            this.label8.Size = new System.Drawing.Size(72, 21);
             this.label8.TabIndex = 4;
             this.label8.Text = "Văn hóa";
             // 
@@ -204,7 +204,7 @@
             this.label5.Location = new System.Drawing.Point(7, 153);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(50, 20);
+            this.label5.Size = new System.Drawing.Size(51, 21);
             this.label5.TabIndex = 5;
             this.label5.Text = "Email";
             // 
@@ -214,7 +214,7 @@
             this.label7.Location = new System.Drawing.Point(384, 74);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(66, 20);
+            this.label7.Size = new System.Drawing.Size(70, 21);
             this.label7.TabIndex = 6;
             this.label7.Text = "Di động";
             // 
@@ -224,7 +224,7 @@
             this.label4.Location = new System.Drawing.Point(7, 115);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(60, 20);
+            this.label4.Size = new System.Drawing.Size(65, 21);
             this.label4.TabIndex = 7;
             this.label4.Text = "Địa chỉ";
             // 
@@ -234,7 +234,7 @@
             this.label6.Location = new System.Drawing.Point(384, 35);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(73, 20);
+            this.label6.Size = new System.Drawing.Size(76, 21);
             this.label6.TabIndex = 8;
             this.label6.Text = "Giới tính";
             // 
@@ -244,7 +244,7 @@
             this.label3.Location = new System.Drawing.Point(7, 74);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(81, 20);
+            this.label3.Size = new System.Drawing.Size(84, 21);
             this.label3.TabIndex = 9;
             this.label3.Text = "Ngày sinh";
             // 
@@ -254,7 +254,7 @@
             this.label2.Location = new System.Drawing.Point(7, 35);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(58, 20);
+            this.label2.Size = new System.Drawing.Size(60, 21);
             this.label2.TabIndex = 10;
             this.label2.Text = "Họ tên";
             // 
@@ -300,6 +300,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmAddEmployee";
             this.Text = "frmAddEmployee";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmAddEmployee_FormClosing);
             this.Load += new System.EventHandler(this.frmAddEmployee_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_Emp)).EndInit();
             this.groupBox1.ResumeLayout(false);

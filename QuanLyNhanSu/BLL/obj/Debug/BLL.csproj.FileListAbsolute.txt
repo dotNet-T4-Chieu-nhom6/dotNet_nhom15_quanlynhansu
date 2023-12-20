@@ -29,3 +29,12 @@ C:\Users\HP\Desktop\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\BLL\obj\Debug\BLL.cs
 C:\Users\HP\Desktop\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\BLL\obj\Debug\BLL.csproj.CopyComplete
 C:\Users\HP\Desktop\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\BLL\obj\Debug\BLL.dll
 C:\Users\HP\Desktop\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\BLL\obj\Debug\BLL.pdb
+H:\FinalNET\QuanLyNhanSu\BLL\bin\Debug\BLL.dll
+H:\FinalNET\QuanLyNhanSu\BLL\bin\Debug\BLL.pdb
+H:\FinalNET\QuanLyNhanSu\BLL\bin\Debug\DAL.dll
+H:\FinalNET\QuanLyNhanSu\BLL\bin\Debug\DTO.dll
+H:\FinalNET\QuanLyNhanSu\BLL\bin\Debug\DAL.pdb
+H:\FinalNET\QuanLyNhanSu\BLL\bin\Debug\DTO.pdb
+H:\FinalNET\QuanLyNhanSu\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+H:\FinalNET\QuanLyNhanSu\BLL\obj\Debug\BLL.dll
+H:\FinalNET\QuanLyNhanSu\BLL\obj\Debug\BLL.pdb

@@ -23,3 +23,10 @@ C:\Users\HP\Desktop\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\DAL\obj\Debug\DAL.cs
 C:\Users\HP\Desktop\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\DAL\obj\Debug\DAL.csproj.CopyComplete
 C:\Users\HP\Desktop\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\DAL\obj\Debug\DAL.dll
 C:\Users\HP\Desktop\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\DAL\obj\Debug\DAL.pdb
+H:\FinalNET\QuanLyNhanSu\DAL\bin\Debug\DAL.dll
+H:\FinalNET\QuanLyNhanSu\DAL\bin\Debug\DAL.pdb
+H:\FinalNET\QuanLyNhanSu\DAL\bin\Debug\DTO.dll
+H:\FinalNET\QuanLyNhanSu\DAL\bin\Debug\DTO.pdb
+H:\FinalNET\QuanLyNhanSu\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+H:\FinalNET\QuanLyNhanSu\DAL\obj\Debug\DAL.dll
+H:\FinalNET\QuanLyNhanSu\DAL\obj\Debug\DAL.pdb

@@ -85,8 +85,6 @@ namespace QuanLyNhanSu
         private void frmEditEmployee_Load(object sender, EventArgs e)
         {
             dtgv_Emp.DataSource = Bus_Layer.GetAllEmps();
-            txt_EmpID.Visible = false;
-            lb_EmpID.Visible = false;
         }
 
         private void btn_Exit_Click(object sender, EventArgs e)
@@ -106,6 +104,17 @@ namespace QuanLyNhanSu
             {
                 MessageBox.Show("Mã phòng ban không được để trống!");
                 txt_Department.Focus();
+            }
+        }
+
+        private void frmEditEmployee_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult r = MessageBox.Show("Bạn có chắc muốn thoát?", "Thoát", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (r == DialogResult.Yes)
+            {
+                this.Hide();
+                frmMain f = new frmMain();
+                f.Show();
             }
         }
     }

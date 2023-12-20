@@ -72,7 +72,7 @@
             // 
             this.txt_EmpID.Location = new System.Drawing.Point(121, 40);
             this.txt_EmpID.Name = "txt_EmpID";
-            this.txt_EmpID.Size = new System.Drawing.Size(265, 28);
+            this.txt_EmpID.Size = new System.Drawing.Size(265, 24);
             this.txt_EmpID.TabIndex = 12;
             // 
             // label11
@@ -81,7 +81,7 @@
             this.label11.Location = new System.Drawing.Point(27, 43);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(65, 21);
+            this.label11.Size = new System.Drawing.Size(54, 17);
             this.label11.TabIndex = 5;
             this.label11.Text = "Mã NV";
             // 
@@ -100,7 +100,7 @@
             // 
             // frmDeleteEmp
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(988, 549);
             this.Controls.Add(this.dtgv_Emp);
@@ -108,6 +108,7 @@
             this.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmDeleteEmp";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmDeleteEmp";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmDeleteEmp_FormClosing);
             this.Load += new System.EventHandler(this.frmDeleteEmp_Load);

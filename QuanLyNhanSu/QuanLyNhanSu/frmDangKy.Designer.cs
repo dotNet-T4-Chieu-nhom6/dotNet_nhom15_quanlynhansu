@@ -163,6 +163,7 @@ namespace QuanLyNhanSu
             this.Controls.Add(this.txt_Pass);
             this.Controls.Add(this.txt_User);
             this.Name = "frmDangKy";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng Ký";
             ((System.ComponentModel.ISupportInitialize)(this.ptb4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb3)).EndInit();

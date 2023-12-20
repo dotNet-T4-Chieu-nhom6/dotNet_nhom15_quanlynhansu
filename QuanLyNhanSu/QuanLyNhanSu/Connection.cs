@@ -11,14 +11,9 @@ namespace QuanLyNhanSu
     {
         public static SqlConnection GetSqlConnection()
         {
-<<<<<<< HEAD
             //string conStr = "Data Source=.;Initial Catalog=QuanLyNhanSu;Integrated Security=True";
             //string conStr = @"Data Source=DESKTOP-G925OAP;Initial Catalog=QuanLyNhanSu;Integrated Security=True;Encrypt=True;TrustServerCertificate=True";
             string conStr = @"Data Source=LAPTOP-RHGDOGMA\DUC;Initial Catalog=QuanLyNhanSu;Integrated Security=True";
-=======
-            string conStr = "Data Source=DESKTOP-US92MIO\\QUANGLOPXE;Initial Catalog=QuanLyNhanSu;Integrated Security=True";
-            //string conStr = @"Data Source=DESKTOP-G925OAP;Initial Catalog=QuanLyNhanSu;Integrated Security=True;Encrypt=True;TrustServerCertificate=True";
->>>>>>> a9dd1dcf6928a716e012791583d02aeeb938c6f2
             SqlConnection conn = new SqlConnection(conStr);
             return conn;
         }

@@ -95,7 +95,7 @@
             // 
             this.dateTimePicker1.Location = new System.Drawing.Point(101, 71);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(265, 29);
+            this.dateTimePicker1.Size = new System.Drawing.Size(265, 24);
             this.dateTimePicker1.TabIndex = 18;
             // 
             // btn_Exit
@@ -122,7 +122,7 @@
             // 
             this.txt_Department.Location = new System.Drawing.Point(492, 196);
             this.txt_Department.Name = "txt_Department";
-            this.txt_Department.Size = new System.Drawing.Size(265, 29);
+            this.txt_Department.Size = new System.Drawing.Size(265, 24);
             this.txt_Department.TabIndex = 11;
             this.txt_Department.Leave += new System.EventHandler(this.txt_Department_Leave);
             // 
@@ -130,49 +130,49 @@
             // 
             this.txt_Expertise.Location = new System.Drawing.Point(492, 150);
             this.txt_Expertise.Name = "txt_Expertise";
-            this.txt_Expertise.Size = new System.Drawing.Size(265, 29);
+            this.txt_Expertise.Size = new System.Drawing.Size(265, 24);
             this.txt_Expertise.TabIndex = 11;
             // 
             // txt_EmpID
             // 
             this.txt_EmpID.Location = new System.Drawing.Point(101, 241);
             this.txt_EmpID.Name = "txt_EmpID";
-            this.txt_EmpID.Size = new System.Drawing.Size(265, 29);
+            this.txt_EmpID.Size = new System.Drawing.Size(265, 24);
             this.txt_EmpID.TabIndex = 12;
             // 
             // txt_Salary
             // 
             this.txt_Salary.Location = new System.Drawing.Point(101, 196);
             this.txt_Salary.Name = "txt_Salary";
-            this.txt_Salary.Size = new System.Drawing.Size(265, 29);
+            this.txt_Salary.Size = new System.Drawing.Size(265, 24);
             this.txt_Salary.TabIndex = 12;
             // 
             // txt_Email
             // 
             this.txt_Email.Location = new System.Drawing.Point(101, 150);
             this.txt_Email.Name = "txt_Email";
-            this.txt_Email.Size = new System.Drawing.Size(265, 29);
+            this.txt_Email.Size = new System.Drawing.Size(265, 24);
             this.txt_Email.TabIndex = 12;
             // 
             // txt_Education
             // 
             this.txt_Education.Location = new System.Drawing.Point(492, 112);
             this.txt_Education.Name = "txt_Education";
-            this.txt_Education.Size = new System.Drawing.Size(265, 29);
+            this.txt_Education.Size = new System.Drawing.Size(265, 24);
             this.txt_Education.TabIndex = 13;
             // 
             // txt_Address
             // 
             this.txt_Address.Location = new System.Drawing.Point(101, 112);
             this.txt_Address.Name = "txt_Address";
-            this.txt_Address.Size = new System.Drawing.Size(265, 29);
+            this.txt_Address.Size = new System.Drawing.Size(265, 24);
             this.txt_Address.TabIndex = 14;
             // 
             // txt_PhoneNumber
             // 
             this.txt_PhoneNumber.Location = new System.Drawing.Point(492, 71);
             this.txt_PhoneNumber.Name = "txt_PhoneNumber";
-            this.txt_PhoneNumber.Size = new System.Drawing.Size(265, 29);
+            this.txt_PhoneNumber.Size = new System.Drawing.Size(265, 24);
             this.txt_PhoneNumber.TabIndex = 15;
             // 
             // label10
@@ -181,7 +181,7 @@
             this.label10.Location = new System.Drawing.Point(384, 199);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(86, 21);
+            this.label10.Size = new System.Drawing.Size(67, 17);
             this.label10.TabIndex = 3;
             this.label10.Text = "Mã phòng";
             // 
@@ -189,7 +189,7 @@
             // 
             this.txt_Gender.Location = new System.Drawing.Point(492, 32);
             this.txt_Gender.Name = "txt_Gender";
-            this.txt_Gender.Size = new System.Drawing.Size(265, 29);
+            this.txt_Gender.Size = new System.Drawing.Size(265, 24);
             this.txt_Gender.TabIndex = 16;
             // 
             // label9
@@ -198,7 +198,7 @@
             this.label9.Location = new System.Drawing.Point(384, 153);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(105, 21);
+            this.label9.Size = new System.Drawing.Size(82, 17);
             this.label9.TabIndex = 3;
             this.label9.Text = "Chuyên môn";
             // 
@@ -208,7 +208,7 @@
             this.lb_EmpID.Location = new System.Drawing.Point(7, 244);
             this.lb_EmpID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_EmpID.Name = "lb_EmpID";
-            this.lb_EmpID.Size = new System.Drawing.Size(65, 21);
+            this.lb_EmpID.Size = new System.Drawing.Size(54, 17);
             this.lb_EmpID.TabIndex = 5;
             this.lb_EmpID.Text = "Mã NV";
             // 
@@ -216,7 +216,7 @@
             // 
             this.txt_Name.Location = new System.Drawing.Point(101, 32);
             this.txt_Name.Name = "txt_Name";
-            this.txt_Name.Size = new System.Drawing.Size(265, 29);
+            this.txt_Name.Size = new System.Drawing.Size(265, 24);
             this.txt_Name.TabIndex = 17;
             // 
             // label1
@@ -225,7 +225,7 @@
             this.label1.Location = new System.Drawing.Point(7, 199);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(59, 21);
+            this.label1.Size = new System.Drawing.Size(47, 17);
             this.label1.TabIndex = 5;
             this.label1.Text = "Lương";
             // 
@@ -235,7 +235,7 @@
             this.label8.Location = new System.Drawing.Point(384, 115);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(72, 21);
+            this.label8.Size = new System.Drawing.Size(58, 17);
             this.label8.TabIndex = 4;
             this.label8.Text = "Văn hóa";
             // 
@@ -245,7 +245,7 @@
             this.label5.Location = new System.Drawing.Point(7, 153);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(51, 21);
+            this.label5.Size = new System.Drawing.Size(41, 17);
             this.label5.TabIndex = 5;
             this.label5.Text = "Email";
             // 
@@ -255,7 +255,7 @@
             this.label7.Location = new System.Drawing.Point(384, 74);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(70, 21);
+            this.label7.Size = new System.Drawing.Size(55, 17);
             this.label7.TabIndex = 6;
             this.label7.Text = "Di động";
             // 
@@ -265,7 +265,7 @@
             this.label4.Location = new System.Drawing.Point(7, 115);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(65, 21);
+            this.label4.Size = new System.Drawing.Size(50, 17);
             this.label4.TabIndex = 7;
             this.label4.Text = "Địa chỉ";
             // 
@@ -275,7 +275,7 @@
             this.label6.Location = new System.Drawing.Point(384, 35);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(76, 21);
+            this.label6.Size = new System.Drawing.Size(57, 17);
             this.label6.TabIndex = 8;
             this.label6.Text = "Giới tính";
             // 
@@ -285,7 +285,7 @@
             this.label3.Location = new System.Drawing.Point(7, 74);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(84, 21);
+            this.label3.Size = new System.Drawing.Size(67, 17);
             this.label3.TabIndex = 9;
             this.label3.Text = "Ngày sinh";
             // 
@@ -295,7 +295,7 @@
             this.label2.Location = new System.Drawing.Point(7, 35);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(60, 21);
+            this.label2.Size = new System.Drawing.Size(48, 17);
             this.label2.TabIndex = 10;
             this.label2.Text = "Họ tên";
             // 
@@ -311,7 +311,7 @@
             // 
             // frmEditEmployee
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(902, 603);
             this.Controls.Add(this.dtgv_Emp);
@@ -319,6 +319,7 @@
             this.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmEditEmployee";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmEditEmployee";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmEditEmployee_FormClosing);
             this.Load += new System.EventHandler(this.frmEditEmployee_Load);

@@ -87,6 +87,7 @@ namespace QuanLyNhanSu
             this.Controls.Add(this.txt_Email);
             this.Controls.Add(this.ptb4);
             this.Name = "frmQuenMatKhau";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmQuenMatKhau";
             ((System.ComponentModel.ISupportInitialize)(this.ptb4)).EndInit();
             this.ResumeLayout(false);

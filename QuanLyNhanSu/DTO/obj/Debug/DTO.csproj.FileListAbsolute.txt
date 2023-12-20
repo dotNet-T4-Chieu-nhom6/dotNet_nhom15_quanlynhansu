@@ -27,3 +27,9 @@ H:\FinalNET\QuanLyNhanSu\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
 H:\FinalNET\QuanLyNhanSu\DTO\obj\Debug\DTO.dll
 H:\FinalNET\QuanLyNhanSu\DTO\obj\Debug\DTO.pdb
 >>>>>>> a9dd1dcf6928a716e012791583d02aeeb938c6f2
+D:\HuynhHuuDuc_2001207422\DoAnNET\DeAnNet_2012_2\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\DTO\bin\Debug\DTO.dll
+D:\HuynhHuuDuc_2001207422\DoAnNET\DeAnNet_2012_2\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\DTO\bin\Debug\DTO.pdb
+D:\HuynhHuuDuc_2001207422\DoAnNET\DeAnNet_2012_2\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+D:\HuynhHuuDuc_2001207422\DoAnNET\DeAnNet_2012_2\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\HuynhHuuDuc_2001207422\DoAnNET\DeAnNet_2012_2\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\DTO\obj\Debug\DTO.dll
+D:\HuynhHuuDuc_2001207422\DoAnNET\DeAnNet_2012_2\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\DTO\obj\Debug\DTO.pdb

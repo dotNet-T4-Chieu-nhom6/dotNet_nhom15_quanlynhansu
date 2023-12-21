@@ -192,5 +192,12 @@ namespace QuanLyNhanSu
                 e.Handled = true;
             }
         }
+
+        private void tsmn_Salary_High_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        
     }
 }

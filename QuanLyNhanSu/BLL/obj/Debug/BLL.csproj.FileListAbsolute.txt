@@ -1,47 +1,3 @@
-H:\DOANNET\QuanLyNhanSu\BLL\bin\Debug\BLL.dll
-H:\DOANNET\QuanLyNhanSu\BLL\bin\Debug\BLL.pdb
-H:\DOANNET\QuanLyNhanSu\BLL\bin\Debug\DAL.dll
-H:\DOANNET\QuanLyNhanSu\BLL\bin\Debug\DTO.dll
-H:\DOANNET\QuanLyNhanSu\BLL\bin\Debug\DAL.pdb
-H:\DOANNET\QuanLyNhanSu\BLL\bin\Debug\DTO.pdb
-H:\DOANNET\QuanLyNhanSu\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
-H:\DOANNET\QuanLyNhanSu\BLL\obj\Debug\BLL.dll
-H:\DOANNET\QuanLyNhanSu\BLL\obj\Debug\BLL.pdb
-D:\HuynhHuuDuc_2001207422\DoAnNET\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\BLL\bin\Debug\BLL.dll
-D:\HuynhHuuDuc_2001207422\DoAnNET\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\BLL\bin\Debug\BLL.pdb
-D:\HuynhHuuDuc_2001207422\DoAnNET\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\BLL\bin\Debug\DAL.dll
-D:\HuynhHuuDuc_2001207422\DoAnNET\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\BLL\bin\Debug\DTO.dll
-D:\HuynhHuuDuc_2001207422\DoAnNET\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\BLL\bin\Debug\DAL.pdb
-D:\HuynhHuuDuc_2001207422\DoAnNET\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\BLL\bin\Debug\DTO.pdb
-D:\HuynhHuuDuc_2001207422\DoAnNET\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
-D:\HuynhHuuDuc_2001207422\DoAnNET\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
-D:\HuynhHuuDuc_2001207422\DoAnNET\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\BLL\obj\Debug\BLL.csproj.CopyComplete
-D:\HuynhHuuDuc_2001207422\DoAnNET\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\BLL\obj\Debug\BLL.dll
-D:\HuynhHuuDuc_2001207422\DoAnNET\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\BLL\obj\Debug\BLL.pdb
-C:\Users\HP\Desktop\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\BLL\bin\Debug\BLL.dll
-C:\Users\HP\Desktop\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\BLL\bin\Debug\BLL.pdb
-C:\Users\HP\Desktop\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\BLL\bin\Debug\DAL.dll
-C:\Users\HP\Desktop\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\BLL\bin\Debug\DTO.dll
-C:\Users\HP\Desktop\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\BLL\bin\Debug\DAL.pdb
-C:\Users\HP\Desktop\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\BLL\bin\Debug\DTO.pdb
-C:\Users\HP\Desktop\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
-C:\Users\HP\Desktop\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
-C:\Users\HP\Desktop\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\BLL\obj\Debug\BLL.csproj.CopyComplete
-C:\Users\HP\Desktop\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\BLL\obj\Debug\BLL.dll
-C:\Users\HP\Desktop\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\BLL\obj\Debug\BLL.pdb
-<<<<<<< HEAD
-D:\HuynhHuuDuc_2001207422\DoAnNET\New folder\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\BLL\bin\Debug\BLL.dll
-D:\HuynhHuuDuc_2001207422\DoAnNET\New folder\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\BLL\bin\Debug\BLL.pdb
-D:\HuynhHuuDuc_2001207422\DoAnNET\New folder\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\BLL\bin\Debug\DAL.dll
-D:\HuynhHuuDuc_2001207422\DoAnNET\New folder\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\BLL\bin\Debug\DTO.dll
-D:\HuynhHuuDuc_2001207422\DoAnNET\New folder\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\BLL\bin\Debug\DAL.pdb
-D:\HuynhHuuDuc_2001207422\DoAnNET\New folder\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\BLL\bin\Debug\DTO.pdb
-D:\HuynhHuuDuc_2001207422\DoAnNET\New folder\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
-D:\HuynhHuuDuc_2001207422\DoAnNET\New folder\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
-D:\HuynhHuuDuc_2001207422\DoAnNET\New folder\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\BLL\obj\Debug\BLL.csproj.CopyComplete
-D:\HuynhHuuDuc_2001207422\DoAnNET\New folder\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\BLL\obj\Debug\BLL.dll
-D:\HuynhHuuDuc_2001207422\DoAnNET\New folder\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\BLL\obj\Debug\BLL.pdb
-=======
 H:\FinalNET\QuanLyNhanSu\BLL\bin\Debug\BLL.dll
 H:\FinalNET\QuanLyNhanSu\BLL\bin\Debug\BLL.pdb
 H:\FinalNET\QuanLyNhanSu\BLL\bin\Debug\DAL.dll
@@ -51,15 +7,3 @@ H:\FinalNET\QuanLyNhanSu\BLL\bin\Debug\DTO.pdb
 H:\FinalNET\QuanLyNhanSu\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
 H:\FinalNET\QuanLyNhanSu\BLL\obj\Debug\BLL.dll
 H:\FinalNET\QuanLyNhanSu\BLL\obj\Debug\BLL.pdb
->>>>>>> a9dd1dcf6928a716e012791583d02aeeb938c6f2
-D:\HuynhHuuDuc_2001207422\DoAnNET\DeAnNet_2012_2\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
-D:\HuynhHuuDuc_2001207422\DoAnNET\DeAnNet_2012_2\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
-D:\HuynhHuuDuc_2001207422\DoAnNET\DeAnNet_2012_2\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\BLL\obj\Debug\BLL.dll
-D:\HuynhHuuDuc_2001207422\DoAnNET\DeAnNet_2012_2\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\BLL\obj\Debug\BLL.pdb
-D:\HuynhHuuDuc_2001207422\DoAnNET\DeAnNet_2012_2\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\BLL\bin\Debug\BLL.dll
-D:\HuynhHuuDuc_2001207422\DoAnNET\DeAnNet_2012_2\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\BLL\bin\Debug\BLL.pdb
-D:\HuynhHuuDuc_2001207422\DoAnNET\DeAnNet_2012_2\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\BLL\bin\Debug\DAL.dll
-D:\HuynhHuuDuc_2001207422\DoAnNET\DeAnNet_2012_2\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\BLL\bin\Debug\DTO.dll
-D:\HuynhHuuDuc_2001207422\DoAnNET\DeAnNet_2012_2\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\BLL\bin\Debug\DAL.pdb
-D:\HuynhHuuDuc_2001207422\DoAnNET\DeAnNet_2012_2\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\BLL\bin\Debug\DTO.pdb
-D:\HuynhHuuDuc_2001207422\DoAnNET\DeAnNet_2012_2\dotNet_nhom15_quanlynhansu\QuanLyNhanSu\BLL\obj\Debug\BLL.csproj.CopyComplete

@@ -20,14 +20,22 @@ namespace QuanLyNhanSu
 
         private void btn_Delete_Click(object sender, EventArgs e)
         {
-            DialogResult r = MessageBox.Show("Bạn có chắc muốn xóa nhân viên này?", "Xác nhận xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-            if(r == DialogResult.Yes)
+            try
             {
-                int ID = int.Parse(txt_EmpID.Text);
-                Bus_Layer.DeleteEmp(ID);
-                MessageBox.Show("Xóa thành công");                
+                DialogResult r = MessageBox.Show("Bạn có chắc muốn xóa nhân viên này?", "Xác nhận xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (r == DialogResult.Yes)
+                {
+                    int ID = int.Parse(txt_EmpID.Text);
+                    Bus_Layer.DeleteEmp(ID);
+                    MessageBox.Show("Xóa thành công");
+                }
+                dtgv_Emp.DataSource = Bus_Layer.GetAllEmps();
             }
-            dtgv_Emp.DataSource = Bus_Layer.GetAllEmps();
+            catch
+            {
+                MessageBox.Show("Vui lòng chọn nhân viên hoặc nhập mã nhân viên cần xóa!");
+            }
+            
             
         }
 
@@ -62,14 +70,10 @@ namespace QuanLyNhanSu
 
         private void frmDeleteEmp_FormClosing(object sender, FormClosingEventArgs e)
         {
-            DialogResult r = MessageBox.Show("Bạn có chắc muốn thoát?", "Thoát", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (r == DialogResult.Yes)
-            {
-                this.Hide();
-                frmMain f = new frmMain();
-                f.Show();
-            }
+            this.Close();
         }
+
+
 
     }
 }

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DAL;
+using DTO;
 using System.Data.SqlClient;
 using System.Data;
 
@@ -14,6 +15,10 @@ namespace BLL
         public static DataTable GetAllEmps()
         {
             return DataAccess.getDataEmps();
+        }
+        public static List<Department> getListDepts()
+        {
+            return DataAccess.getDataDepts();
         }
         public static void UpdateEmps(int IDNV, string TENV, DateTime NGSINH, string GIOITINH, string DIACHI, string Email, string DiDong, string VanHoa, string ChuyenMon, int IDPB, decimal Luong)
         {

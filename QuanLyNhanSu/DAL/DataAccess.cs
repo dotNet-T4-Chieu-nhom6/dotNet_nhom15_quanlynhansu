@@ -12,8 +12,8 @@ namespace DAL
     {
         public static SqlConnection Connect()
         {
-            //string conStr = "Data Source=DESKTOP-US92MIO\\QUANGLOPXE;Initial Catalog=QuanLyNhanSu;Integrated Security=True";
-            string conStr = "Data Source=DESKTOP-G925OAP;Initial Catalog=QuanLyNhanSu;Integrated Security=True;Encrypt=True;TrustServerCertificate=True";
+            string conStr = "Data Source=DESKTOP-US92MIO\\QUANGLOPXE;Initial Catalog=QuanLyNhanSu;Integrated Security=True";
+            //string conStr = "Data Source=DESKTOP-G925OAP;Initial Catalog=QuanLyNhanSu;Integrated Security=True;Encrypt=True;TrustServerCertificate=True";
             //string conStr = @"Data Source=LAPTOP-RHGDOGMA\DUC;Initial Catalog=QuanLyNhanSu;Integrated Security=True";
             SqlConnection conn = new SqlConnection(conStr);
             return conn;
@@ -32,6 +32,26 @@ namespace DAL
             da.Fill(dt);
             conn.Close();
             return dt;
+        }
+        public static List<Department> getDataDepts()
+        {
+            List<Department> listPB = new List<Department>();
+
+            SqlConnection conn = ConnectionData.Connect();
+            conn.Open();
+            SqlCommand cmd = new SqlCommand("ShowAllDepartment", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            SqlDataReader rdr = cmd.ExecuteReader();
+            while(rdr.Read())
+            {
+                int IDPB = rdr.GetInt32(0);
+                string tenPB = rdr.GetString(1);
+                Department dept = new Department(IDPB, tenPB);
+                listPB.Add(dept);
+            }
+            rdr.Close();
+
+            return listPB;
         }
         public static void UpdateEmp(int IDNV, string TENV, DateTime NGSINH, string GIOITINH, string DIACHI, string Email, string DiDong, string VanHoa, string ChuyenMon, int IDPB, decimal Luong)
         {
@@ -79,5 +99,6 @@ namespace DAL
             cmd.Parameters.AddWithValue("@IDNV", IDNV);
             cmd.ExecuteNonQuery();
         }
+
     }
 }

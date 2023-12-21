@@ -5,8 +5,8 @@ NHÓM 15 GỒM CÓ 3 THÀNH VIÊN:
 	HUỲNH HỮU ĐỨC
 	LÊ HOÀNG NHẤT THỐNG
 ===================================================================================
-		HƯỚNG DẪN SỬ DỤNG PHẦN MỀM QUẢN LÝ NHÂN SỰ
-- Có 2 loại tài khoản:
+		HƯỚNG DẪN ĐĂNG NHẬP PHẦN MỀM QUẢN LÝ NHÂN SỰ
+- Có 3 loại tài khoản:
 + Tài khoản user: chỉ được xem các nhân viên và phòng ban và đăng ký tài khoản user
 + Tài khoản admin: được toàn quyền trên hệ thống như: thêm, xóa, sửa nhân viên,
  phòng ban, tài khoản, thống kê danh sách...
@@ -14,4 +14,7 @@ NHÓM 15 GỒM CÓ 3 THÀNH VIÊN:
  cụ và bảng dữ liệu sẽ được hiển thị bên dưới.
 - User chỉ xem được các nhân viên và phòng ban
 - Admin sẽ có toàn quyền
-- Khi người dùng quên mật khẩu có thể chọn quên mật khẩu và nhập mail vào để liên 
+- Manager sẽ có toàn quyền ngoại trừ quyền quản lí tài khoản
+- Khi người dùng quên mật khẩu có thể chọn quên mật khẩu và nhập mail của tài khoản
+để lấy lại mật khẩu
+- Người dùng có thể đăng ký tài khoản mới

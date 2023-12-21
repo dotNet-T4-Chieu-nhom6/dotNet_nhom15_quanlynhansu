@@ -120,6 +120,7 @@
             this.txt_Email.Size = new System.Drawing.Size(265, 28);
             this.txt_Email.TabIndex = 7;
             this.txt_Email.Leave += new System.EventHandler(this.txt_Email_Leave);
+            this.txt_Email.Validated += new System.EventHandler(this.txt_Email_Validated);
             // 
             // txt_Education
             // 

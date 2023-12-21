@@ -81,7 +81,7 @@ namespace QuanLyNhanSu
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1167, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(1181, 30);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -239,7 +239,7 @@ namespace QuanLyNhanSu
             this.btn_Xoa});
             this.toolStrip1.Location = new System.Drawing.Point(0, 30);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1167, 29);
+            this.toolStrip1.Size = new System.Drawing.Size(1181, 29);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -375,7 +375,7 @@ namespace QuanLyNhanSu
             this.txtInstructions.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtInstructions.Location = new System.Drawing.Point(12, 62);
             this.txtInstructions.Name = "txtInstructions";
-            this.txtInstructions.Size = new System.Drawing.Size(1129, 474);
+            this.txtInstructions.Size = new System.Drawing.Size(1157, 474);
             this.txtInstructions.TabIndex = 5;
             this.txtInstructions.Text = "";
             this.txtInstructions.Visible = false;
@@ -396,7 +396,7 @@ namespace QuanLyNhanSu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1167, 645);
+            this.ClientSize = new System.Drawing.Size(1181, 645);
             this.Controls.Add(this.btn_Instruction);
             this.Controls.Add(this.txtInstructions);
             this.Controls.Add(this.dgv_NhanVien);

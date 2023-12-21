@@ -58,6 +58,7 @@ Insert into PhongBan(tenphongban) Values
 Go
 Insert into Users(nameU, passU, emailU, phanquyen ) Values 
 ('admin','admin123','admin@gmail.com',N'admin'),
+('manager','manager123','manager@gmail.com',N'manager'),
 ('kh01','kh123','kh01@gmail.com',N'user'),
 ('kh02','kh123','kh02@gmail.com',N'user')
 Go

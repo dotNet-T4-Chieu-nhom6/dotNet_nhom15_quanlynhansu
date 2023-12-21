@@ -64,6 +64,7 @@ namespace QuanLyNhanSu
             this.dgv_NhanVien = new System.Windows.Forms.DataGridView();
             this.txtInstructions = new System.Windows.Forms.RichTextBox();
             this.btn_Instruction = new System.Windows.Forms.Button();
+            this.tsmn_EmptyDept = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -130,7 +131,8 @@ namespace QuanLyNhanSu
             this.thốngKêToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.lươngToolStripMenuItem,
             this.chuyênMônToolStripMenuItem,
-            this.giớiTínhToolStripMenuItem});
+            this.giớiTínhToolStripMenuItem,
+            this.tsmn_EmptyDept});
             this.thốngKêToolStripMenuItem.Font = new System.Drawing.Font("Times New Roman", 12F);
             this.thốngKêToolStripMenuItem.Name = "thốngKêToolStripMenuItem";
             this.thốngKêToolStripMenuItem.Size = new System.Drawing.Size(99, 26);
@@ -142,7 +144,7 @@ namespace QuanLyNhanSu
             this.tsmn_Salary_High,
             this.tsmn_Salary_Low});
             this.lươngToolStripMenuItem.Name = "lươngToolStripMenuItem";
-            this.lươngToolStripMenuItem.Size = new System.Drawing.Size(182, 26);
+            this.lươngToolStripMenuItem.Size = new System.Drawing.Size(212, 26);
             this.lươngToolStripMenuItem.Text = "Lương";
             // 
             // tsmn_Salary_High
@@ -166,7 +168,7 @@ namespace QuanLyNhanSu
             this.tsmn_Research,
             this.tsmn_Calculate});
             this.chuyênMônToolStripMenuItem.Name = "chuyênMônToolStripMenuItem";
-            this.chuyênMônToolStripMenuItem.Size = new System.Drawing.Size(182, 26);
+            this.chuyênMônToolStripMenuItem.Size = new System.Drawing.Size(212, 26);
             this.chuyênMônToolStripMenuItem.Text = "Chuyên môn";
             // 
             // tsmn_Coding
@@ -197,7 +199,7 @@ namespace QuanLyNhanSu
             this.tsmn_Female,
             this.tsmn_Other_Gender});
             this.giớiTínhToolStripMenuItem.Name = "giớiTínhToolStripMenuItem";
-            this.giớiTínhToolStripMenuItem.Size = new System.Drawing.Size(182, 26);
+            this.giớiTínhToolStripMenuItem.Size = new System.Drawing.Size(212, 26);
             this.giớiTínhToolStripMenuItem.Text = "Giới tính";
             // 
             // tsmn_Male
@@ -392,6 +394,13 @@ namespace QuanLyNhanSu
             this.btn_Instruction.Visible = false;
             this.btn_Instruction.Click += new System.EventHandler(this.btn_Instruction_Click);
             // 
+            // tsmn_EmptyDept
+            // 
+            this.tsmn_EmptyDept.Name = "tsmn_EmptyDept";
+            this.tsmn_EmptyDept.Size = new System.Drawing.Size(212, 26);
+            this.tsmn_EmptyDept.Text = "Phòng ban trống";
+            this.tsmn_EmptyDept.Click += new System.EventHandler(this.tsmn_EmptyDept_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -458,5 +467,6 @@ namespace QuanLyNhanSu
         private System.Windows.Forms.ToolStripMenuItem tsmn_Salary_Low;
         private System.Windows.Forms.RichTextBox txtInstructions;
         private System.Windows.Forms.Button btn_Instruction;
+        private System.Windows.Forms.ToolStripMenuItem tsmn_EmptyDept;
     }
 }

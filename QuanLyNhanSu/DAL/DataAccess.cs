@@ -151,6 +151,18 @@ namespace DAL
             conn.Close();
             return dt;
         }
+        public static DataTable ShowEmptyDept()
+        {
+            SqlConnection conn = ConnectionData.Connect();
+            conn.Open();
+            SqlCommand cmd = new SqlCommand("ShowEmptyDepartment", conn);
+            cmd.CommandType = CommandType.StoredProcedure;            
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            conn.Close();
+            return dt;
+        }
 
     }
 }

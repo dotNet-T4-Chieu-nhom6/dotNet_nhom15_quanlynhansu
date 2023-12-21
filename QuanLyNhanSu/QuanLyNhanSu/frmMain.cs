@@ -263,6 +263,11 @@ namespace QuanLyNhanSu
             btn_Instruction.Visible = false;
         }
 
+        private void tsmn_EmptyDept_Click(object sender, EventArgs e)
+        {
+            dgv_NhanVien.DataSource = Bus_Layer.ShowEmptyDept();
+        }
+
 
         
     }

@@ -48,6 +48,9 @@ namespace BLL
         {
             return DataAccess.ShowGender(gender);
         }
-
+        public static DataTable ShowEmptyDept()
+        {
+            return DataAccess.ShowEmptyDept();
+        }
     }
 }

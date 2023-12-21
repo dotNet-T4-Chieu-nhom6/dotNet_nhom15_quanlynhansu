@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DTO;
 using BLL;
+using System.IO;
 
 namespace QuanLyNhanSu
 {
@@ -69,7 +70,7 @@ namespace QuanLyNhanSu
                 quảnLýToolStripMenuItem.Enabled = false;
                 quảnLýTàiKhoảnToolStripMenuItem.Enabled = false;
                 thốngKêToolStripMenuItem.Enabled = false;
-                trợGiúpToolStripMenuItem.Enabled = false;
+                tsmn_Help.Enabled = false;
                 toolStrip1.Enabled = false;
             }
             else if (Quyen == 1)
@@ -195,8 +196,73 @@ namespace QuanLyNhanSu
 
         private void tsmn_Salary_High_Click(object sender, EventArgs e)
         {
-
+            dgv_NhanVien.DataSource = Bus_Layer.GetHighSalary();
         }
+
+        private void tsmn_Salary_Low_Click(object sender, EventArgs e)
+        {
+            dgv_NhanVien.DataSource = Bus_Layer.GetLowSalary();
+        }
+
+        private void tsmn_Coding_Click(object sender, EventArgs e)
+        {
+            string expertise = tsmn_Coding.Text;
+            dgv_NhanVien.DataSource = Bus_Layer.GetExpertise(expertise);
+        }
+
+        private void tsmn_Research_Click(object sender, EventArgs e)
+        {
+            string expertise = tsmn_Research.Text;
+            dgv_NhanVien.DataSource = Bus_Layer.GetExpertise(expertise);
+        }
+
+        private void tsmn_Calculate_Click(object sender, EventArgs e)
+        {
+            string expertise = tsmn_Calculate.Text;
+            dgv_NhanVien.DataSource = Bus_Layer.GetExpertise(expertise);
+        }
+
+        private void tsmn_Male_Click(object sender, EventArgs e)
+        {
+            string gender = tsmn_Male.Text;
+            dgv_NhanVien.DataSource = Bus_Layer.GetGender(gender);
+        }
+
+        private void tsmn_Female_Click(object sender, EventArgs e)
+        {
+            string gender = tsmn_Female.Text;
+            dgv_NhanVien.DataSource = Bus_Layer.GetGender(gender);
+        }
+
+        private void tsmn_Other_Gender_Click(object sender, EventArgs e)
+        {
+            string gender = tsmn_Other_Gender.Text;
+            dgv_NhanVien.DataSource = Bus_Layer.GetGender(gender);
+        }
+
+        private void tsmn_Help_Click(object sender, EventArgs e)
+        {            
+            string currentDirectory = Directory.GetCurrentDirectory();         
+            string filePath = Path.Combine(currentDirectory, "Instruction.txt");     
+            try
+            {                    
+                string instructions = File.ReadAllText(filePath);                    
+                txtInstructions.Text = instructions;
+                txtInstructions.Visible = true;
+                btn_Instruction.Visible = true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Đã xảy ra lỗi khi đọc file: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }            
+        }
+
+        private void btn_Instruction_Click(object sender, EventArgs e)
+        {
+            txtInstructions.Visible = false;
+            btn_Instruction.Visible = false;
+        }
+
 
         
     }

@@ -100,5 +100,57 @@ namespace DAL
             cmd.ExecuteNonQuery();
         }
 
+        public static DataTable ShowHighSalary()
+        {
+            SqlConnection conn = ConnectionData.Connect();
+            conn.Open();
+            SqlCommand cmd = new SqlCommand("ShowHighSalary", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            conn.Close();
+            return dt;
+        }
+
+        public static DataTable ShowLowSalary()
+        {
+            SqlConnection conn = ConnectionData.Connect();
+            conn.Open();
+            SqlCommand cmd = new SqlCommand("ShowLowSalary", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            conn.Close();
+            return dt;
+        }
+        public static DataTable ShowExpertise(string Expertise)
+        {
+            SqlConnection conn = ConnectionData.Connect();
+            conn.Open();
+            SqlCommand cmd = new SqlCommand("Show_Expertise", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add("@Expertise", Expertise);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            conn.Close();
+            return dt;
+        }
+        public static DataTable ShowGender(string Gender)
+        {
+            SqlConnection conn = ConnectionData.Connect();
+            conn.Open();
+            SqlCommand cmd = new SqlCommand("ShowGender", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add("@Gender", Gender);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            conn.Close();
+            return dt;
+        }
+
     }
 }

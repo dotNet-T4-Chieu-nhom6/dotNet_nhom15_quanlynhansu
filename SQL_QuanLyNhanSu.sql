@@ -63,8 +63,12 @@ Insert into Users(nameU, passU, emailU, phanquyen ) Values
 Go
 Insert into NhanVien
 Values
-(N'Võ Thu Thủy','2001-01-15',N'Nữ',N'123 Đường Lê Văn Khương Quận 12','thuthuy@gmail.com','0777777777',N'nghe nhạc',N'tính toán',1,6000000),
-(N'Lê Thành Công','2002-02-17',N'Nam',N'456 Quận Gò Vấp','thanhcong@gmail.com','0666666666',N'đọc sách',N'tính toán',2,8000000)
+(N'Võ Thu Thủy','2001-01-15',N'Nữ',N'123 Đường Lê Văn Khương Quận 12','thuthuy@gmail.com','0777777777',N'10/12',N'Tính toán',1,60000),
+(N'Lê Thành Công','2002-02-17',N'Nam',N'456 Quận Gò Vấp','thanhcong@gmail.com','0666666666',N'12/12',N'Tính toán',2,80000),
+(N'Dương Thuận Quang','2003-02-17',N'Nam',N'123 Quận 11','quang@gmail.com','0888888888',N'12/12',N'Coding',2,30000),
+(N'Huỳnh Hữu Đức','2002-02-12',N'Nam',N'23 Quận 7','hhduc@gmail.com','055555555',N'12/12',N'Nghiên cứu',2,80000),
+(N'Lê Hoàng Nhất Thống','2003-01-11',N'Nam',N'789 Quận Bình Thạnh','lhnthong@gmail.com','0333333333',N'12/12',N'Coding',2,40000)
+
 Go 
 Insert into HopDong(idhd, loaihd,chucvu, trangthai,phucap,luongHD) Values
 ('987654', N'kinh doanh', N'Kế toán', N'đi làm đầy đủ', 200000,5000000),
@@ -123,9 +127,39 @@ BEGIN
 	DELETE FROM NhanVien WHERE idnv = @IDNV
 END
 
-CREATE PROC ShowHighSalary
-@SALARY INT
+GO
+CREATE PROC ShowAllDepartment
 AS
 BEGIN
-	SELECT * FROM NhanVien WHERE luong > @SALARY
+	SELECT * FROM PhongBan
+END
+
+GO
+CREATE PROC ShowHighSalary
+AS
+BEGIN
+	SELECT * FROM NhanVien WHERE luong > 50000
+END
+
+GO
+CREATE PROC ShowLowSalary
+AS
+BEGIN
+	SELECT * FROM NhanVien WHERE luong < 50000
+END
+
+GO
+CREATE PROC Show_Expertise
+@Expertise NVARCHAR(100)
+AS
+BEGIN
+	SELECT * FROM NhanVien WHERE chuyenmon = @Expertise
+END
+
+GO
+CREATE PROC ShowGender
+@Gender NVARCHAR(10)
+AS
+BEGIN
+	SELECT * FROM NhanVien WHERE gioitinh = @Gender
 END

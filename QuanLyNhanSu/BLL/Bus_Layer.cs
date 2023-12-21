@@ -32,5 +32,22 @@ namespace BLL
         {
             DataAccess.DeleteEmp(IDNV);
         }
+        public static DataTable GetHighSalary()
+        {
+            return DataAccess.ShowHighSalary();
+        }
+        public static DataTable GetLowSalary()
+        {
+            return DataAccess.ShowLowSalary();
+        }
+        public static DataTable GetExpertise(string expertise)
+        {
+            return DataAccess.ShowExpertise(expertise);
+        }
+        public static DataTable GetGender(string gender)
+        {
+            return DataAccess.ShowGender(gender);
+        }
+
     }
 }

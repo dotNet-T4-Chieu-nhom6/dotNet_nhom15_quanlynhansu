@@ -164,3 +164,11 @@ AS
 BEGIN
 	SELECT * FROM NhanVien WHERE gioitinh = @Gender
 END
+
+
+GO
+CREATE PROC ShowEmptyDepartment
+AS
+BEGIN
+	SELECT tenphongban FROM PhongBan WHERE idphongban NOT IN (SELECT idphongban FROM NhanVien)
+END
